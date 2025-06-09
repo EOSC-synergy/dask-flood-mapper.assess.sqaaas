@@ -1,0 +1,1911 @@
+{
+    "meta": {
+        "version": "3.5.0",
+        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/dask-flood-mapper.assess.sqaaas/main/.report/assessment_output.json",
+        "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/dask-flood-mapper.assess.sqaaas/main/.report/assessment_output.json",
+        "timestamp": 1749455872.857116
+    },
+    "repository": [
+        {
+            "url": "https://github.com/interTwin-eu/dask-flood-mapper",
+            "name": "interTwin-eu/dask-flood-mapper",
+            "tag": "main",
+            "commit_id": "96c988683360d714ab75db8ccabc633ebd7d12b6",
+            "is_main_repo": true,
+            "avatar_url": "https://avatars.githubusercontent.com/u/123980631?v=4",
+            "description": null,
+            "languages": null,
+            "topics": null,
+            "stargazers_count": null,
+            "watchers_count": null,
+            "contributors_count": null,
+            "forks_count": null,
+            "badge_status": "silver"
+        }
+    ],
+    "report": {
+        "QC.Acc": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Acc01": {
+                    "description": "Is the source code managed with a Version Control System?",
+                    "requirement_level": "MUST",
+                    "hint": "The source code shall be managed with Git and remain publicly available for this criterion to be successful. Please check <a href=\"https://git-scm.com/book/es/v2\" target=\"_blank\">Pro Git</a> docs about how to get started using Git tool. Guidelines provided by the most popular social coding platforms (<a href=\"https://docs.github.com/get-started\" target=\"_blank\">GitHub</a>, <a href=\"https://about.gitlab.com/get-started/\" target=\"_blank\">GitLab</a>) are also a good starting point",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "Source code uses Git for version control",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-boolean",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "git",
+                                "lang": "scm",
+                                "version": "2.34.1",
+                                "docker": {
+                                    "image": "bitnami/git:2.34.1",
+                                    "reviewed": "2021-12-30"
+                                },
+                                "ci": {
+                                    "name": "QC.Acc github.com/interTwin-eu/dask-flood-mapper git",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "git rev-parse --is-inside-work-tree "
+                                    ],
+                                    "stdout_text": "true",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/34/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {}
+                        }
+                    ],
+                    "valid": true
+                }
+            },
+            "coverage": {
+                "percentage": 100,
+                "total_subcriteria": 1,
+                "success_subcriteria": 1
+            }
+        },
+        "QC.Doc": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Doc06.1": {
+                    "description": "Is the software scope outlined in the code repository?",
+                    "requirement_level": "MUST",
+                    "hint": "A README file presents your software to the audience interested in your software project. Several online sites simplify the task of creating the README file, such as <a href=\"https://www.makeareadme.com/\" target=\"_blank\">Make a README</a> or <a href=\"https://readme.so/\" target=\"_blank\">readme.so</a> sites. Be sure to add it to the code repository's root path",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "A README file is present in the code repository",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-find_doc_files",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "find_doc_files.py",
+                                "lang": "Contribution-enabling Files",
+                                "version": "latest",
+                                "docker": {
+                                    "dockerfile": "QC.Doc/Dockerfile",
+                                    "reviewed": "2022-01-26"
+                                },
+                                "ci": {
+                                    "name": "QC.Doc github.com/interTwin-eu/dask-flood-mapper find_doc_files.py",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "find_doc_files.py --file_type all"
+                                    ],
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 7369}], \"CODE_OF_CONDUCT\": [{\"file_name\": \".github/CODE_OF_CONDUCT.md\", \"size\": 3969}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 2757}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/43/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "README": [
+                                    {
+                                        "file_name": "README.md",
+                                        "size": 7369
+                                    }
+                                ],
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": ".github/CODE_OF_CONDUCT.md",
+                                        "size": 3969
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 2757
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Doc06.3": {
+                    "description": "Does the project establish a code of conduct for its participants?",
+                    "requirement_level": "MUST",
+                    "hint": "A CODE_OF_CONDUCT file sets the path for a constructive, respectful and positive atmosphere among all the contributors in your software project. Of course you can define your own, but in case you want to rely on external and widely-adopted code of conducts check out some of the most popular ones: <a href=\"https://contributor-covenant.org/\" target=\"_blank\">Contributor Covenant</a> or <a href=\"https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/\" target=\"_blank\">Citizen Code of Conduct</a>",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "A CODE_OF_CONDUCT file is present in the code repository",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-find_doc_files",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "find_doc_files.py",
+                                "lang": "Contribution-enabling Files",
+                                "version": "latest",
+                                "docker": {
+                                    "dockerfile": "QC.Doc/Dockerfile",
+                                    "reviewed": "2022-01-26"
+                                },
+                                "ci": {
+                                    "name": "QC.Doc github.com/interTwin-eu/dask-flood-mapper find_doc_files.py",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "find_doc_files.py --file_type all"
+                                    ],
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 7369}], \"CODE_OF_CONDUCT\": [{\"file_name\": \".github/CODE_OF_CONDUCT.md\", \"size\": 3969}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 2757}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/43/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "README": [
+                                    {
+                                        "file_name": "README.md",
+                                        "size": 7369
+                                    }
+                                ],
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": ".github/CODE_OF_CONDUCT.md",
+                                        "size": 3969
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 2757
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Doc06.2": {
+                    "description": "Is there a clear path or guidelines on how to contribute to the code?",
+                    "requirement_level": "MUST",
+                    "hint": "A CONTRIBUTING file shall be present in the root path of the code repository describing the expected workflow to follow when adding contributions. Please check <a href=\"https://mozillascience.github.io/working-open-workshop/contributing/\" target=\"_blank\">Mozilla's guidelines</a> and <a href=\"https://github.com/github/docs/blob/main/CONTRIBUTING.md\" target=\"_blank\">GitHub's CONTRIBUTING.md example</a> to get inspired on how to write a good CONTRIBUTING file",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "A CONTRIBUTING file is present in the code repository",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-find_doc_files",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "find_doc_files.py",
+                                "lang": "Contribution-enabling Files",
+                                "version": "latest",
+                                "docker": {
+                                    "dockerfile": "QC.Doc/Dockerfile",
+                                    "reviewed": "2022-01-26"
+                                },
+                                "ci": {
+                                    "name": "QC.Doc github.com/interTwin-eu/dask-flood-mapper find_doc_files.py",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "find_doc_files.py --file_type all"
+                                    ],
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 7369}], \"CODE_OF_CONDUCT\": [{\"file_name\": \".github/CODE_OF_CONDUCT.md\", \"size\": 3969}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 2757}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/43/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "README": [
+                                    {
+                                        "file_name": "README.md",
+                                        "size": 7369
+                                    }
+                                ],
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": ".github/CODE_OF_CONDUCT.md",
+                                        "size": 3969
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 2757
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Doc01.1": {
+                    "description": "Are docs managed in the same repository as code?",
+                    "requirement_level": "MAY",
+                    "hint": "This subcriterion will succeed if the documentation files exist on the same repository as the source code, e.g. under a <code>docs/</code> folder",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "Documentation resides in the same repository as code",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-boolean",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "git",
+                                "lang": null,
+                                "version": null,
+                                "docker": null,
+                                "ci": {
+                                    "name": "QC.Doc github.com/interTwin-eu/dask-flood-mapper git",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "git rev-parse --is-inside-work-tree "
+                                    ],
+                                    "stdout_text": "true",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/52/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {}
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Doc02.X": {
+                    "description": "Are docs following a style for the Markdown markup language?",
+                    "requirement_level": "MAY",
+                    "hint": "When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on <a href=\"https://github.com/markdownlint/markdownlint/\" target=\"_blank\">markdownlint</a> for Markdown files and <a href=\"https://github.com/twolfson/restructuredtext-lint/\" target=\"_blank\">restructuredtext-lint</a> for reStructuredText",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "Docs are not fully compliant with markdownlint standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-markdownlint",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "markdownlint",
+                                "lang": "Markdown",
+                                "version": "0.11.0",
+                                "docker": {
+                                    "dockerfile": "QC.Doc/markdownlint/Dockerfile",
+                                    "reviewed": "1970-01-01"
+                                },
+                                "ci": {
+                                    "name": "QC.Doc github.com/interTwin-eu/dask-flood-mapper markdownlint",
+                                    "status": "FAILED",
+                                    "stdout_command": [
+                                        "mdl --json  ."
+                                    ],
+                                    "stdout_text": "[{\"filename\":\"./CONTRIBUTING.md\",\"line\":45,\"rule\":\"MD007\",\"aliases\":[\"ul-indent\"],\"description\":\"Unordered list indentation\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md007---unordered-list-indentation\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":22,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":23,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":24,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":25,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"},{\"filename\":\"./CONTRIBUTING.md\",\"line\":26,\"rule\":\"MD029\",\"aliases\":[\"ol-prefix\"],\"description\":\"Ordered list item prefix\",\"docs\":\"https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#md029---ordered-list-item-prefix\"}]",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/61/log?consoleFull"
+                                },
+                                "level": "RECOMMENDED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "./CONTRIBUTING.md": {
+                                    "MD007": {
+                                        "description": "Unordered list indentation",
+                                        "line": [
+                                            45
+                                        ]
+                                    },
+                                    "MD029": {
+                                        "description": "Ordered list item prefix",
+                                        "line": [
+                                            22,
+                                            23,
+                                            24,
+                                            25,
+                                            26
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "valid": false,
+                            "message": "Docs are not fully compliant with restructuredtext-lint standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-markdownlint",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "restructuredtext-lint",
+                                "lang": "reStructuredText",
+                                "version": "1.3.2",
+                                "docker": {
+                                    "dockerfile": "QC.Doc/restructuredtext-lint/Dockerfile",
+                                    "reviewed": "2022-01-18"
+                                },
+                                "ci": {
+                                    "name": "QC.Doc github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint",
+                                    "status": "FAILED",
+                                    "stdout_command": [
+                                        "rst-lint --level warning --format json ."
+                                    ],
+                                    "stdout_text": "[{\"line\": 4, \"source\": \"./docs/api.rst\", \"level\": 3, \"type\": \"ERROR\", \"message\": \"Unknown directive type \\\"automodule\\\".\", \"full_message\": \"Unknown directive type \\\"automodule\\\".\\n\\n.. automodule:: dask_flood_mapper.flood\\n    :members:\"}]",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/70/log?consoleFull"
+                                },
+                                "level": "RECOMMENDED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": [
+                                {
+                                    "line": 4,
+                                    "source": "./docs/api.rst",
+                                    "level": 3,
+                                    "type": "ERROR",
+                                    "message": "Unknown directive type \"automodule\".",
+                                    "full_message": "Unknown directive type \"automodule\".\n\n.. automodule:: dask_flood_mapper.flood\n    :members:"
+                                }
+                            ]
+                        }
+                    ],
+                    "valid": false,
+                    "required_for_next_level_badge": false
+                }
+            },
+            "coverage": {
+                "percentage": 80,
+                "total_subcriteria": 5,
+                "success_subcriteria": 4
+            }
+        },
+        "QC.Lic": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Lic01": {
+                    "description": "Is code licensed to be freely used, modified and distributed by others?",
+                    "requirement_level": "MUST",
+                    "hint": "<p>Your source code repository shall be distributed under an open source license for this subcriterion to pass successfully. Be sure to have a license file present in the code repository matching the name <code>LICENSE</code> with optional extensions (depending on the format used): <code>[.md|.rst|.txt]</code>.</p><p>Valid licenses are any of those approved either by the <a href=\"https://opensource.org/licenses\" target=\"_blank\">Open Source Initiative</a> and/or the Free Software Foundation <a href=\"https://www.gnu.org/licenses/license-list.html\" target=\"_blank\"></a>. You can also check the <a href=\"https://choosealicense.com/\" target=\"_blank\">choosealicense.com</a> site</p>",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "An Open Source license found in the code repository: MIT",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-licensee",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "licensee",
+                                "lang": "license",
+                                "version": "9.17.0",
+                                "docker": {
+                                    "image": "eoscsynergy/sqaaas-licensee:9.17.0",
+                                    "reviewed": "2021-06-28"
+                                },
+                                "ci": {
+                                    "name": "QC.Lic github.com/interTwin-eu/dask-flood-mapper licensee",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "licensee detect . --confidence 60 --json "
+                                    ],
+                                    "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false},{\"key\":\"other\",\"spdx_id\":\"NOASSERTION\",\"meta\":{\"title\":null,\"source\":null,\"description\":null,\"how\":null,\"using\":null,\"featured\":false,\"hidden\":true,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/other/\",\"rules\":{\"permissions\":[],\"conditions\":[],\"limitations\":[]},\"fields\":[],\"other\":true,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE.txt\",\"content\":\"MIT License\\n\\nCopyright (c) [2025] [TU Wien]\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) [2025] [TU Wien]\"},{\"filename\":\"COPYRIGHT\",\"content\":\"This project is licensed under MIT.\\n\\nCopyrights in this project are retained by their contributors.\\nNo copyright assignment is required to contribute to this project.\\n\",\"content_hash\":\"fc7c92616e4353936eb44819f8733479636cdd22\",\"content_normalized\":\"this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.\",\"matcher\":null,\"matched_license\":\"NOASSERTION\",\"attribution\":null},{\"filename\":\"README.md\",\"content\":\"This repository is covered under the [MIT License](LICENSE.txt).\",\"content_hash\":\"0afead61ea8c2a03987e6bf7ff28f4fc15e9b318\",\"content_normalized\":\"this repository is covered under the mit license.\",\"matcher\":{\"name\":\"reference\",\"confidence\":90},\"matched_license\":\"MIT\",\"attribution\":null}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/79/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "licenses": [
+                                    {
+                                        "key": "mit",
+                                        "spdx_id": "MIT",
+                                        "meta": {
+                                            "title": "MIT License",
+                                            "source": "https://spdx.org/licenses/MIT.html",
+                                            "description": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+                                            "how": "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.",
+                                            "using": {
+                                                "Babel": "https://github.com/babel/babel/blob/master/LICENSE",
+                                                ".NET": "https://github.com/dotnet/runtime/blob/main/LICENSE.TXT",
+                                                "Rails": "https://github.com/rails/rails/blob/master/MIT-LICENSE"
+                                            },
+                                            "featured": true,
+                                            "hidden": false,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/mit/",
+                                        "rules": {
+                                            "permissions": [
+                                                {
+                                                    "tag": "commercial-use",
+                                                    "label": "Commercial use",
+                                                    "description": "The licensed material and derivatives may be used for commercial purposes."
+                                                },
+                                                {
+                                                    "tag": "modifications",
+                                                    "label": "Modification",
+                                                    "description": "The licensed material may be modified."
+                                                },
+                                                {
+                                                    "tag": "distribution",
+                                                    "label": "Distribution",
+                                                    "description": "The licensed material may be distributed."
+                                                },
+                                                {
+                                                    "tag": "private-use",
+                                                    "label": "Private use",
+                                                    "description": "The licensed material may be used and modified in private."
+                                                }
+                                            ],
+                                            "conditions": [
+                                                {
+                                                    "tag": "include-copyright",
+                                                    "label": "License and copyright notice",
+                                                    "description": "A copy of the license and copyright notice must be included with the licensed material."
+                                                }
+                                            ],
+                                            "limitations": [
+                                                {
+                                                    "tag": "liability",
+                                                    "label": "Liability",
+                                                    "description": "This license includes a limitation of liability."
+                                                },
+                                                {
+                                                    "tag": "warranty",
+                                                    "label": "Warranty",
+                                                    "description": "This license explicitly states that it does NOT provide any warranty."
+                                                }
+                                            ]
+                                        },
+                                        "fields": [
+                                            {
+                                                "name": "year",
+                                                "description": "The current year"
+                                            },
+                                            {
+                                                "name": "fullname",
+                                                "description": "The full name or username of the repository owner"
+                                            }
+                                        ],
+                                        "other": false,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    },
+                                    {
+                                        "key": "other",
+                                        "spdx_id": "NOASSERTION",
+                                        "meta": {
+                                            "title": null,
+                                            "source": null,
+                                            "description": null,
+                                            "how": null,
+                                            "using": null,
+                                            "featured": false,
+                                            "hidden": true,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/other/",
+                                        "rules": {
+                                            "permissions": [],
+                                            "conditions": [],
+                                            "limitations": []
+                                        },
+                                        "fields": [],
+                                        "other": true,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    }
+                                ],
+                                "matched_files": [
+                                    {
+                                        "filename": "LICENSE.txt",
+                                        "content": "MIT License\n\nCopyright (c) [2025] [TU Wien]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                                        "content_hash": "4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9",
+                                        "content_normalized": "permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.",
+                                        "matcher": {
+                                            "name": "exact",
+                                            "confidence": 100
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": "Copyright (c) [2025] [TU Wien]"
+                                    },
+                                    {
+                                        "filename": "COPYRIGHT",
+                                        "content": "This project is licensed under MIT.\n\nCopyrights in this project are retained by their contributors.\nNo copyright assignment is required to contribute to this project.\n",
+                                        "content_hash": "fc7c92616e4353936eb44819f8733479636cdd22",
+                                        "content_normalized": "this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.",
+                                        "matcher": null,
+                                        "matched_license": "NOASSERTION",
+                                        "attribution": null
+                                    },
+                                    {
+                                        "filename": "README.md",
+                                        "content": "This repository is covered under the [MIT License](LICENSE.txt).",
+                                        "content_hash": "0afead61ea8c2a03987e6bf7ff28f4fc15e9b318",
+                                        "content_normalized": "this repository is covered under the mit license.",
+                                        "matcher": {
+                                            "name": "reference",
+                                            "confidence": 90
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Lic01.1": {
+                    "description": "Is LICENSE file placed in the root path of the code repository?",
+                    "requirement_level": "MUST",
+                    "hint": "Most social coding platforms require the license file to placed in the root path of the code repository, so it is a good practice to use this location by default. Allowed file names are <code>LICENSE</code>, <code>LICENSE.md</code>, <code>LICENSE.rst</code>, <code>LICENSE.txt</code>",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "LICENSE file is visible at the root path of the code repository: LICENSE.txt",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-licensee",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "licensee",
+                                "lang": "license",
+                                "version": "9.17.0",
+                                "docker": {
+                                    "image": "eoscsynergy/sqaaas-licensee:9.17.0",
+                                    "reviewed": "2021-06-28"
+                                },
+                                "ci": {
+                                    "name": "QC.Lic github.com/interTwin-eu/dask-flood-mapper licensee",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "licensee detect . --confidence 60 --json "
+                                    ],
+                                    "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false},{\"key\":\"other\",\"spdx_id\":\"NOASSERTION\",\"meta\":{\"title\":null,\"source\":null,\"description\":null,\"how\":null,\"using\":null,\"featured\":false,\"hidden\":true,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/other/\",\"rules\":{\"permissions\":[],\"conditions\":[],\"limitations\":[]},\"fields\":[],\"other\":true,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE.txt\",\"content\":\"MIT License\\n\\nCopyright (c) [2025] [TU Wien]\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) [2025] [TU Wien]\"},{\"filename\":\"COPYRIGHT\",\"content\":\"This project is licensed under MIT.\\n\\nCopyrights in this project are retained by their contributors.\\nNo copyright assignment is required to contribute to this project.\\n\",\"content_hash\":\"fc7c92616e4353936eb44819f8733479636cdd22\",\"content_normalized\":\"this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.\",\"matcher\":null,\"matched_license\":\"NOASSERTION\",\"attribution\":null},{\"filename\":\"README.md\",\"content\":\"This repository is covered under the [MIT License](LICENSE.txt).\",\"content_hash\":\"0afead61ea8c2a03987e6bf7ff28f4fc15e9b318\",\"content_normalized\":\"this repository is covered under the mit license.\",\"matcher\":{\"name\":\"reference\",\"confidence\":90},\"matched_license\":\"MIT\",\"attribution\":null}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/79/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "licenses": [
+                                    {
+                                        "key": "mit",
+                                        "spdx_id": "MIT",
+                                        "meta": {
+                                            "title": "MIT License",
+                                            "source": "https://spdx.org/licenses/MIT.html",
+                                            "description": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+                                            "how": "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.",
+                                            "using": {
+                                                "Babel": "https://github.com/babel/babel/blob/master/LICENSE",
+                                                ".NET": "https://github.com/dotnet/runtime/blob/main/LICENSE.TXT",
+                                                "Rails": "https://github.com/rails/rails/blob/master/MIT-LICENSE"
+                                            },
+                                            "featured": true,
+                                            "hidden": false,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/mit/",
+                                        "rules": {
+                                            "permissions": [
+                                                {
+                                                    "tag": "commercial-use",
+                                                    "label": "Commercial use",
+                                                    "description": "The licensed material and derivatives may be used for commercial purposes."
+                                                },
+                                                {
+                                                    "tag": "modifications",
+                                                    "label": "Modification",
+                                                    "description": "The licensed material may be modified."
+                                                },
+                                                {
+                                                    "tag": "distribution",
+                                                    "label": "Distribution",
+                                                    "description": "The licensed material may be distributed."
+                                                },
+                                                {
+                                                    "tag": "private-use",
+                                                    "label": "Private use",
+                                                    "description": "The licensed material may be used and modified in private."
+                                                }
+                                            ],
+                                            "conditions": [
+                                                {
+                                                    "tag": "include-copyright",
+                                                    "label": "License and copyright notice",
+                                                    "description": "A copy of the license and copyright notice must be included with the licensed material."
+                                                }
+                                            ],
+                                            "limitations": [
+                                                {
+                                                    "tag": "liability",
+                                                    "label": "Liability",
+                                                    "description": "This license includes a limitation of liability."
+                                                },
+                                                {
+                                                    "tag": "warranty",
+                                                    "label": "Warranty",
+                                                    "description": "This license explicitly states that it does NOT provide any warranty."
+                                                }
+                                            ]
+                                        },
+                                        "fields": [
+                                            {
+                                                "name": "year",
+                                                "description": "The current year"
+                                            },
+                                            {
+                                                "name": "fullname",
+                                                "description": "The full name or username of the repository owner"
+                                            }
+                                        ],
+                                        "other": false,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    },
+                                    {
+                                        "key": "other",
+                                        "spdx_id": "NOASSERTION",
+                                        "meta": {
+                                            "title": null,
+                                            "source": null,
+                                            "description": null,
+                                            "how": null,
+                                            "using": null,
+                                            "featured": false,
+                                            "hidden": true,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/other/",
+                                        "rules": {
+                                            "permissions": [],
+                                            "conditions": [],
+                                            "limitations": []
+                                        },
+                                        "fields": [],
+                                        "other": true,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    }
+                                ],
+                                "matched_files": [
+                                    {
+                                        "filename": "LICENSE.txt",
+                                        "content": "MIT License\n\nCopyright (c) [2025] [TU Wien]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                                        "content_hash": "4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9",
+                                        "content_normalized": "permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.",
+                                        "matcher": {
+                                            "name": "exact",
+                                            "confidence": 100
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": "Copyright (c) [2025] [TU Wien]"
+                                    },
+                                    {
+                                        "filename": "COPYRIGHT",
+                                        "content": "This project is licensed under MIT.\n\nCopyrights in this project are retained by their contributors.\nNo copyright assignment is required to contribute to this project.\n",
+                                        "content_hash": "fc7c92616e4353936eb44819f8733479636cdd22",
+                                        "content_normalized": "this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.",
+                                        "matcher": null,
+                                        "matched_license": "NOASSERTION",
+                                        "attribution": null
+                                    },
+                                    {
+                                        "filename": "README.md",
+                                        "content": "This repository is covered under the [MIT License](LICENSE.txt).",
+                                        "content_hash": "0afead61ea8c2a03987e6bf7ff28f4fc15e9b318",
+                                        "content_normalized": "this repository is covered under the mit license.",
+                                        "matcher": {
+                                            "name": "reference",
+                                            "confidence": 90
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Lic02": {
+                    "description": "Does the code use a license approved by Open Source Initiative?",
+                    "requirement_level": "MUST",
+                    "hint": "The <a href=\"https://opensource.org/\" target=\"_blank\">Open Source Initiative (OSI)</a> sets out the requirements for software to be legally declared as Open Source. The license in use shall be in the list of <a href=\"https://opensource.org/license-list.html\" target=\"_blank\">OSI-approved licenses</a> for this criterion to be successful",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "License MIT is approved by the Open Source Initiative",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-licensee",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "licensee",
+                                "lang": "license",
+                                "version": "9.17.0",
+                                "docker": {
+                                    "image": "eoscsynergy/sqaaas-licensee:9.17.0",
+                                    "reviewed": "2021-06-28"
+                                },
+                                "ci": {
+                                    "name": "QC.Lic github.com/interTwin-eu/dask-flood-mapper licensee",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "licensee detect . --confidence 60 --json "
+                                    ],
+                                    "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false},{\"key\":\"other\",\"spdx_id\":\"NOASSERTION\",\"meta\":{\"title\":null,\"source\":null,\"description\":null,\"how\":null,\"using\":null,\"featured\":false,\"hidden\":true,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/other/\",\"rules\":{\"permissions\":[],\"conditions\":[],\"limitations\":[]},\"fields\":[],\"other\":true,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE.txt\",\"content\":\"MIT License\\n\\nCopyright (c) [2025] [TU Wien]\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) [2025] [TU Wien]\"},{\"filename\":\"COPYRIGHT\",\"content\":\"This project is licensed under MIT.\\n\\nCopyrights in this project are retained by their contributors.\\nNo copyright assignment is required to contribute to this project.\\n\",\"content_hash\":\"fc7c92616e4353936eb44819f8733479636cdd22\",\"content_normalized\":\"this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.\",\"matcher\":null,\"matched_license\":\"NOASSERTION\",\"attribution\":null},{\"filename\":\"README.md\",\"content\":\"This repository is covered under the [MIT License](LICENSE.txt).\",\"content_hash\":\"0afead61ea8c2a03987e6bf7ff28f4fc15e9b318\",\"content_normalized\":\"this repository is covered under the mit license.\",\"matcher\":{\"name\":\"reference\",\"confidence\":90},\"matched_license\":\"MIT\",\"attribution\":null}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/79/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "licenses": [
+                                    {
+                                        "key": "mit",
+                                        "spdx_id": "MIT",
+                                        "meta": {
+                                            "title": "MIT License",
+                                            "source": "https://spdx.org/licenses/MIT.html",
+                                            "description": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+                                            "how": "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.",
+                                            "using": {
+                                                "Babel": "https://github.com/babel/babel/blob/master/LICENSE",
+                                                ".NET": "https://github.com/dotnet/runtime/blob/main/LICENSE.TXT",
+                                                "Rails": "https://github.com/rails/rails/blob/master/MIT-LICENSE"
+                                            },
+                                            "featured": true,
+                                            "hidden": false,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/mit/",
+                                        "rules": {
+                                            "permissions": [
+                                                {
+                                                    "tag": "commercial-use",
+                                                    "label": "Commercial use",
+                                                    "description": "The licensed material and derivatives may be used for commercial purposes."
+                                                },
+                                                {
+                                                    "tag": "modifications",
+                                                    "label": "Modification",
+                                                    "description": "The licensed material may be modified."
+                                                },
+                                                {
+                                                    "tag": "distribution",
+                                                    "label": "Distribution",
+                                                    "description": "The licensed material may be distributed."
+                                                },
+                                                {
+                                                    "tag": "private-use",
+                                                    "label": "Private use",
+                                                    "description": "The licensed material may be used and modified in private."
+                                                }
+                                            ],
+                                            "conditions": [
+                                                {
+                                                    "tag": "include-copyright",
+                                                    "label": "License and copyright notice",
+                                                    "description": "A copy of the license and copyright notice must be included with the licensed material."
+                                                }
+                                            ],
+                                            "limitations": [
+                                                {
+                                                    "tag": "liability",
+                                                    "label": "Liability",
+                                                    "description": "This license includes a limitation of liability."
+                                                },
+                                                {
+                                                    "tag": "warranty",
+                                                    "label": "Warranty",
+                                                    "description": "This license explicitly states that it does NOT provide any warranty."
+                                                }
+                                            ]
+                                        },
+                                        "fields": [
+                                            {
+                                                "name": "year",
+                                                "description": "The current year"
+                                            },
+                                            {
+                                                "name": "fullname",
+                                                "description": "The full name or username of the repository owner"
+                                            }
+                                        ],
+                                        "other": false,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    },
+                                    {
+                                        "key": "other",
+                                        "spdx_id": "NOASSERTION",
+                                        "meta": {
+                                            "title": null,
+                                            "source": null,
+                                            "description": null,
+                                            "how": null,
+                                            "using": null,
+                                            "featured": false,
+                                            "hidden": true,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/other/",
+                                        "rules": {
+                                            "permissions": [],
+                                            "conditions": [],
+                                            "limitations": []
+                                        },
+                                        "fields": [],
+                                        "other": true,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    }
+                                ],
+                                "matched_files": [
+                                    {
+                                        "filename": "LICENSE.txt",
+                                        "content": "MIT License\n\nCopyright (c) [2025] [TU Wien]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                                        "content_hash": "4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9",
+                                        "content_normalized": "permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.",
+                                        "matcher": {
+                                            "name": "exact",
+                                            "confidence": 100
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": "Copyright (c) [2025] [TU Wien]"
+                                    },
+                                    {
+                                        "filename": "COPYRIGHT",
+                                        "content": "This project is licensed under MIT.\n\nCopyrights in this project are retained by their contributors.\nNo copyright assignment is required to contribute to this project.\n",
+                                        "content_hash": "fc7c92616e4353936eb44819f8733479636cdd22",
+                                        "content_normalized": "this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.",
+                                        "matcher": null,
+                                        "matched_license": "NOASSERTION",
+                                        "attribution": null
+                                    },
+                                    {
+                                        "filename": "README.md",
+                                        "content": "This repository is covered under the [MIT License](LICENSE.txt).",
+                                        "content_hash": "0afead61ea8c2a03987e6bf7ff28f4fc15e9b318",
+                                        "content_normalized": "this repository is covered under the mit license.",
+                                        "matcher": {
+                                            "name": "reference",
+                                            "confidence": 90
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Lic02.1": {
+                    "description": "Does the code use an Open Source Initiative's popular-recognized license?",
+                    "requirement_level": "MAY",
+                    "hint": "The Open Source Initiative (OSI) sets out the requirements for software to be legally declared as Open Source. OSI provides a list of popular licenses that shall match most of the demands. The license in use shall be in the list of <a href=\"https://opensource.org/license-list.html\" target=\"_blank\">OSI popular licenses</a> for this criterion to be successful",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "License MIT is listed under the Open Source Initiative popular category",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-licensee",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "licensee",
+                                "lang": "license",
+                                "version": "9.17.0",
+                                "docker": {
+                                    "image": "eoscsynergy/sqaaas-licensee:9.17.0",
+                                    "reviewed": "2021-06-28"
+                                },
+                                "ci": {
+                                    "name": "QC.Lic github.com/interTwin-eu/dask-flood-mapper licensee",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "licensee detect . --confidence 60 --json "
+                                    ],
+                                    "stdout_text": "{\"licenses\":[{\"key\":\"mit\",\"spdx_id\":\"MIT\",\"meta\":{\"title\":\"MIT License\",\"source\":\"https://spdx.org/licenses/MIT.html\",\"description\":\"A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.\",\"how\":\"Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.\",\"using\":{\"Babel\":\"https://github.com/babel/babel/blob/master/LICENSE\",\".NET\":\"https://github.com/dotnet/runtime/blob/main/LICENSE.TXT\",\"Rails\":\"https://github.com/rails/rails/blob/master/MIT-LICENSE\"},\"featured\":true,\"hidden\":false,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/mit/\",\"rules\":{\"permissions\":[{\"tag\":\"commercial-use\",\"label\":\"Commercial use\",\"description\":\"The licensed material and derivatives may be used for commercial purposes.\"},{\"tag\":\"modifications\",\"label\":\"Modification\",\"description\":\"The licensed material may be modified.\"},{\"tag\":\"distribution\",\"label\":\"Distribution\",\"description\":\"The licensed material may be distributed.\"},{\"tag\":\"private-use\",\"label\":\"Private use\",\"description\":\"The licensed material may be used and modified in private.\"}],\"conditions\":[{\"tag\":\"include-copyright\",\"label\":\"License and copyright notice\",\"description\":\"A copy of the license and copyright notice must be included with the licensed material.\"}],\"limitations\":[{\"tag\":\"liability\",\"label\":\"Liability\",\"description\":\"This license includes a limitation of liability.\"},{\"tag\":\"warranty\",\"label\":\"Warranty\",\"description\":\"This license explicitly states that it does NOT provide any warranty.\"}]},\"fields\":[{\"name\":\"year\",\"description\":\"The current year\"},{\"name\":\"fullname\",\"description\":\"The full name or username of the repository owner\"}],\"other\":false,\"gpl\":false,\"lgpl\":false,\"cc\":false},{\"key\":\"other\",\"spdx_id\":\"NOASSERTION\",\"meta\":{\"title\":null,\"source\":null,\"description\":null,\"how\":null,\"using\":null,\"featured\":false,\"hidden\":true,\"nickname\":null,\"note\":null},\"url\":\"http://choosealicense.com/licenses/other/\",\"rules\":{\"permissions\":[],\"conditions\":[],\"limitations\":[]},\"fields\":[],\"other\":true,\"gpl\":false,\"lgpl\":false,\"cc\":false}],\"matched_files\":[{\"filename\":\"LICENSE.txt\",\"content\":\"MIT License\\n\\nCopyright (c) [2025] [TU Wien]\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\\"Software\\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n\",\"content_hash\":\"4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9\",\"content_normalized\":\"permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.\",\"matcher\":{\"name\":\"exact\",\"confidence\":100},\"matched_license\":\"MIT\",\"attribution\":\"Copyright (c) [2025] [TU Wien]\"},{\"filename\":\"COPYRIGHT\",\"content\":\"This project is licensed under MIT.\\n\\nCopyrights in this project are retained by their contributors.\\nNo copyright assignment is required to contribute to this project.\\n\",\"content_hash\":\"fc7c92616e4353936eb44819f8733479636cdd22\",\"content_normalized\":\"this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.\",\"matcher\":null,\"matched_license\":\"NOASSERTION\",\"attribution\":null},{\"filename\":\"README.md\",\"content\":\"This repository is covered under the [MIT License](LICENSE.txt).\",\"content_hash\":\"0afead61ea8c2a03987e6bf7ff28f4fc15e9b318\",\"content_normalized\":\"this repository is covered under the mit license.\",\"matcher\":{\"name\":\"reference\",\"confidence\":90},\"matched_license\":\"MIT\",\"attribution\":null}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/79/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "licenses": [
+                                    {
+                                        "key": "mit",
+                                        "spdx_id": "MIT",
+                                        "meta": {
+                                            "title": "MIT License",
+                                            "source": "https://spdx.org/licenses/MIT.html",
+                                            "description": "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.",
+                                            "how": "Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders.",
+                                            "using": {
+                                                "Babel": "https://github.com/babel/babel/blob/master/LICENSE",
+                                                ".NET": "https://github.com/dotnet/runtime/blob/main/LICENSE.TXT",
+                                                "Rails": "https://github.com/rails/rails/blob/master/MIT-LICENSE"
+                                            },
+                                            "featured": true,
+                                            "hidden": false,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/mit/",
+                                        "rules": {
+                                            "permissions": [
+                                                {
+                                                    "tag": "commercial-use",
+                                                    "label": "Commercial use",
+                                                    "description": "The licensed material and derivatives may be used for commercial purposes."
+                                                },
+                                                {
+                                                    "tag": "modifications",
+                                                    "label": "Modification",
+                                                    "description": "The licensed material may be modified."
+                                                },
+                                                {
+                                                    "tag": "distribution",
+                                                    "label": "Distribution",
+                                                    "description": "The licensed material may be distributed."
+                                                },
+                                                {
+                                                    "tag": "private-use",
+                                                    "label": "Private use",
+                                                    "description": "The licensed material may be used and modified in private."
+                                                }
+                                            ],
+                                            "conditions": [
+                                                {
+                                                    "tag": "include-copyright",
+                                                    "label": "License and copyright notice",
+                                                    "description": "A copy of the license and copyright notice must be included with the licensed material."
+                                                }
+                                            ],
+                                            "limitations": [
+                                                {
+                                                    "tag": "liability",
+                                                    "label": "Liability",
+                                                    "description": "This license includes a limitation of liability."
+                                                },
+                                                {
+                                                    "tag": "warranty",
+                                                    "label": "Warranty",
+                                                    "description": "This license explicitly states that it does NOT provide any warranty."
+                                                }
+                                            ]
+                                        },
+                                        "fields": [
+                                            {
+                                                "name": "year",
+                                                "description": "The current year"
+                                            },
+                                            {
+                                                "name": "fullname",
+                                                "description": "The full name or username of the repository owner"
+                                            }
+                                        ],
+                                        "other": false,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    },
+                                    {
+                                        "key": "other",
+                                        "spdx_id": "NOASSERTION",
+                                        "meta": {
+                                            "title": null,
+                                            "source": null,
+                                            "description": null,
+                                            "how": null,
+                                            "using": null,
+                                            "featured": false,
+                                            "hidden": true,
+                                            "nickname": null,
+                                            "note": null
+                                        },
+                                        "url": "http://choosealicense.com/licenses/other/",
+                                        "rules": {
+                                            "permissions": [],
+                                            "conditions": [],
+                                            "limitations": []
+                                        },
+                                        "fields": [],
+                                        "other": true,
+                                        "gpl": false,
+                                        "lgpl": false,
+                                        "cc": false
+                                    }
+                                ],
+                                "matched_files": [
+                                    {
+                                        "filename": "LICENSE.txt",
+                                        "content": "MIT License\n\nCopyright (c) [2025] [TU Wien]\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                                        "content_hash": "4c2c763d64bbc7ef2e58b0ec6d06d90cee9755c9",
+                                        "content_normalized": "permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'software'), to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. the software is provided 'as is', without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.",
+                                        "matcher": {
+                                            "name": "exact",
+                                            "confidence": 100
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": "Copyright (c) [2025] [TU Wien]"
+                                    },
+                                    {
+                                        "filename": "COPYRIGHT",
+                                        "content": "This project is licensed under MIT.\n\nCopyrights in this project are retained by their contributors.\nNo copyright assignment is required to contribute to this project.\n",
+                                        "content_hash": "fc7c92616e4353936eb44819f8733479636cdd22",
+                                        "content_normalized": "this project is licensed under mit. copyrights in this project are retained by their contributors. no copyright assignment is required to contribute to this project.",
+                                        "matcher": null,
+                                        "matched_license": "NOASSERTION",
+                                        "attribution": null
+                                    },
+                                    {
+                                        "filename": "README.md",
+                                        "content": "This repository is covered under the [MIT License](LICENSE.txt).",
+                                        "content_hash": "0afead61ea8c2a03987e6bf7ff28f4fc15e9b318",
+                                        "content_normalized": "this repository is covered under the mit license.",
+                                        "matcher": {
+                                            "name": "reference",
+                                            "confidence": 90
+                                        },
+                                        "matched_license": "MIT",
+                                        "attribution": null
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "valid": true
+                }
+            },
+            "coverage": {
+                "percentage": 100,
+                "total_subcriteria": 4,
+                "success_subcriteria": 4
+            }
+        },
+        "QC.Met": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Met01": {
+                    "description": "Is the software citable?",
+                    "requirement_level": "SHOULD",
+                    "hint": "The two formats for software citation supported by SQAaaS are: 1) <a href=\"https://codemeta.github.io/\" target=\"_blank\">CodeMeta</a> and 2) <a href=\"https://citation-file-format.github.io/\" target=\"_blank\">Citation File Format (CFF)</a>. While CodeMeta provides you with a more comprehensive description, CFF is a more lightweight, good-enough approach to software (with built-in support by GitHub) citation. Both provide tools (<a href=\"https://codemeta.github.io/codemeta-generator/\" target=\"_blank\">CodeMeta generator</a>, <a href=\"https://citation-file-format.github.io/cff-initializer-javascript/#/\" target=\"_blank\">CFFINIT</a>)to easily generate a working citation file. Once having the file, be sure to add it to the root path of your code repo.",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "Software metadata successfully validated",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-cff",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "cff-converter-python",
+                                "lang": "Citation File Format",
+                                "version": "2.0.0",
+                                "docker": {
+                                    "dockerfile": "QC.Met/cff-converter-python/Dockerfile",
+                                    "reviewed": "2022-01-19"
+                                },
+                                "ci": {
+                                    "name": "QC.Met github.com/interTwin-eu/dask-flood-mapper cff-converter-python",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "cffconvert --validate "
+                                    ],
+                                    "stdout_text": "Citation metadata are valid according to schema version 1.2.0.",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/88/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": "Citation metadata are valid according to schema version 1.2.0."
+                        }
+                    ],
+                    "valid": true
+                }
+            },
+            "coverage": {
+                "percentage": 100,
+                "total_subcriteria": 1,
+                "success_subcriteria": 1
+            }
+        },
+        "QC.Sec": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Sec02": {
+                    "description": "Is the source code passing Static Analysis Security Testing (SAST)?",
+                    "requirement_level": "MUST",
+                    "hint": "Please check & solve the security weaknesses found by the SAST tool",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "Source code files pass SAST checks performed by bandit tool",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-bandit",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "bandit",
+                                "lang": "Python",
+                                "version": "1.7.4",
+                                "docker": {
+                                    "dockerfile": "QC.Sec/bandit/Dockerfile",
+                                    "reviewed": "2022-03-04"
+                                },
+                                "ci": {
+                                    "name": "QC.Sec github.com/interTwin-eu/dask-flood-mapper bandit",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  ."
+                                    ],
+                                    "stdout_text": "{\n  \"errors\": [],\n  \"generated_at\": \"2025-06-09T07:55:59Z\",\n  \"metrics\": {\n    \"./setup.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 2,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/__init__.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 3,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/_version.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 2,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/app.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 1,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 68,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/calculation.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 57,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/catalog.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 40,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/cli.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 10,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/flood.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 260,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/harmonic_params.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 99,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/processing.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 132,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/dask_flood_mapper/stac_config.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 29,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./tests/__init__.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 3,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./tests/test_acceptance.py\": {\n      \"CONFIDENCE.HIGH\": 1,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 1,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 41,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./tests/test_dask_flood_mapper.py\": {\n      \"CONFIDENCE.HIGH\": 34,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 34,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 376,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./tests/test_harmonic_params.py\": {\n      \"CONFIDENCE.HIGH\": 22,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 22,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 248,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"_totals\": {\n      \"CONFIDENCE.HIGH\": 57,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 1,\n      \"SEVERITY.LOW\": 57,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 1370,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    }\n  },\n  \"results\": []\n}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/97/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "errors": [],
+                                "generated_at": "2025-06-09T07:55:59Z",
+                                "metrics": {
+                                    "./setup.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 2,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/__init__.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 3,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/_version.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 2,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/app.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 1,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 1,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 68,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/calculation.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 57,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/catalog.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 40,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/cli.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 10,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/flood.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 260,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/harmonic_params.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 99,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/processing.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 132,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./src/dask_flood_mapper/stac_config.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 29,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./tests/__init__.py": {
+                                        "CONFIDENCE.HIGH": 0,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 0,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 3,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./tests/test_acceptance.py": {
+                                        "CONFIDENCE.HIGH": 1,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 1,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 41,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./tests/test_dask_flood_mapper.py": {
+                                        "CONFIDENCE.HIGH": 34,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 34,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 376,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "./tests/test_harmonic_params.py": {
+                                        "CONFIDENCE.HIGH": 22,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 0,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 0,
+                                        "SEVERITY.LOW": 22,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 248,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    },
+                                    "_totals": {
+                                        "CONFIDENCE.HIGH": 57,
+                                        "CONFIDENCE.LOW": 0,
+                                        "CONFIDENCE.MEDIUM": 1,
+                                        "CONFIDENCE.UNDEFINED": 0,
+                                        "SEVERITY.HIGH": 1,
+                                        "SEVERITY.LOW": 57,
+                                        "SEVERITY.MEDIUM": 0,
+                                        "SEVERITY.UNDEFINED": 0,
+                                        "loc": 1370,
+                                        "nosec": 0,
+                                        "skipped_tests": 0
+                                    }
+                                },
+                                "results": []
+                            }
+                        }
+                    ],
+                    "valid": true
+                }
+            },
+            "coverage": {
+                "percentage": 100,
+                "total_subcriteria": 1,
+                "success_subcriteria": 1
+            }
+        },
+        "QC.Sty": {
+            "valid": false,
+            "subcriteria": {
+                "QC.Sty01": {
+                    "description": "Is the software product following a style standard for Python files?",
+                    "requirement_level": "MUST",
+                    "hint": "Please check & solve the security weaknesses found by the linter tool",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "Python files are not fully compliant with flake8 (pycodestyle, pyflakes, mccabe) standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-flake8",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "flake8",
+                                "lang": "Python",
+                                "version": "4.0.1 (mccabe: 0.6.1, pycodestyle: 2.8.0, pyflakes: 2.4.0)",
+                                "docker": {
+                                    "image": "pipelinecomponents/flake8:0.9.0",
+                                    "reviewed": "2022-03-04"
+                                },
+                                "ci": {
+                                    "name": "QC.Sty github.com/interTwin-eu/dask-flood-mapper flake8",
+                                    "status": "FAILED",
+                                    "stdout_command": [
+                                        "flake8 ."
+                                    ],
+                                    "stdout_text": "./tests/test_acceptance.py:60:80: E501 line too long (81 > 79 characters)\n./tests/test_acceptance.py:64:80: E501 line too long (86 > 79 characters)\n./tests/__init__.py:3:80: E501 line too long (88 > 79 characters)\n./tests/test_harmonic_params.py:18:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:19:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:28:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:46:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:47:80: E501 line too long (88 > 79 characters)\n./tests/test_harmonic_params.py:48:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:49:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:50:80: E501 line too long (85 > 79 characters)\n./tests/test_harmonic_params.py:51:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:52:80: E501 line too long (85 > 79 characters)\n./tests/test_harmonic_params.py:53:80: E501 line too long (86 > 79 characters)\n./tests/test_harmonic_params.py:54:80: E501 line too long (86 > 79 characters)\n./tests/test_harmonic_params.py:64:80: E501 line too long (101 > 79 characters)\n./tests/test_harmonic_params.py:70:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:104:80: E501 line too long (88 > 79 characters)\n./tests/test_harmonic_params.py:145:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:161:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:163:80: E501 line too long (86 > 79 characters)\n./tests/test_harmonic_params.py:167:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:169:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:210:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:234:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:234:80: E501 line too long (108 > 79 characters)\n./tests/test_harmonic_params.py:243:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:246:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:246:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:249:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:259:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:273:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:274:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:288:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:304:80: E501 line too long (85 > 79 characters)\n./tests/test_harmonic_params.py:306:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:306:80: E501 line too long (93 > 79 characters)\n./tests/test_harmonic_params.py:310:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:312:80: E501 line too long (94 > 79 characters)\n./tests/test_harmonic_params.py:314:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:315:80: E501 line too long (102 > 79 characters)\n./tests/test_harmonic_params.py:316:80: E501 line too long (99 > 79 characters)\n./tests/test_harmonic_params.py:318:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:320:80: E501 line too long (109 > 79 characters)\n./tests/test_harmonic_params.py:322:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:322:80: E501 line too long (80 > 79 characters)\n./tests/test_harmonic_params.py:326:80: E501 line too long (80 > 79 characters)\n./tests/test_harmonic_params.py:327:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:328:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:329:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:331:80: E501 line too long (92 > 79 characters)\n./tests/test_dask_flood_mapper.py:170:80: E501 line too long (84 > 79 characters)\n./tests/test_dask_flood_mapper.py:171:80: E501 line too long (85 > 79 characters)\n./tests/test_dask_flood_mapper.py:274:80: E501 line too long (83 > 79 characters)\n./tests/test_dask_flood_mapper.py:286:80: E501 line too long (84 > 79 characters)\n./tests/test_dask_flood_mapper.py:287:80: E501 line too long (83 > 79 characters)\n./tests/test_dask_flood_mapper.py:292:80: E501 line too long (88 > 79 characters)\n./tests/test_dask_flood_mapper.py:293:80: E501 line too long (82 > 79 characters)\n./tests/test_dask_flood_mapper.py:304:80: E501 line too long (80 > 79 characters)\n./tests/test_dask_flood_mapper.py:379:80: E501 line too long (82 > 79 characters)\n./tests/test_dask_flood_mapper.py:411:80: E501 line too long (83 > 79 characters)\n./tests/test_dask_flood_mapper.py:412:80: E501 line too long (83 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:32:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:33:80: E501 line too long (89 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:69:80: E501 line too long (87 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:87:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:104:80: E501 line too long (85 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:110:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/processing.py:83:80: E501 line too long (80 > 79 characters)\n./src/dask_flood_mapper/processing.py:156:80: E501 line too long (80 > 79 characters)\n./src/dask_flood_mapper/calculation.py:7:80: E501 line too long (85 > 79 characters)\n./src/dask_flood_mapper/app.py:27:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/flood.py:128:80: E501 line too long (82 > 79 characters)\n./src/dask_flood_mapper/flood.py:242:80: E501 line too long (82 > 79 characters)\n./src/dask_flood_mapper/flood.py:279:80: E501 line too long (86 > 79 characters)",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/106/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": "./tests/test_acceptance.py:60:80: E501 line too long (81 > 79 characters)\n./tests/test_acceptance.py:64:80: E501 line too long (86 > 79 characters)\n./tests/__init__.py:3:80: E501 line too long (88 > 79 characters)\n./tests/test_harmonic_params.py:18:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:19:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:28:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:46:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:47:80: E501 line too long (88 > 79 characters)\n./tests/test_harmonic_params.py:48:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:49:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:50:80: E501 line too long (85 > 79 characters)\n./tests/test_harmonic_params.py:51:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:52:80: E501 line too long (85 > 79 characters)\n./tests/test_harmonic_params.py:53:80: E501 line too long (86 > 79 characters)\n./tests/test_harmonic_params.py:54:80: E501 line too long (86 > 79 characters)\n./tests/test_harmonic_params.py:64:80: E501 line too long (101 > 79 characters)\n./tests/test_harmonic_params.py:70:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:104:80: E501 line too long (88 > 79 characters)\n./tests/test_harmonic_params.py:145:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:161:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:163:80: E501 line too long (86 > 79 characters)\n./tests/test_harmonic_params.py:167:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:169:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:210:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:234:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:234:80: E501 line too long (108 > 79 characters)\n./tests/test_harmonic_params.py:243:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:246:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:246:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:249:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:259:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:273:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:274:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:288:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:304:80: E501 line too long (85 > 79 characters)\n./tests/test_harmonic_params.py:306:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:306:80: E501 line too long (93 > 79 characters)\n./tests/test_harmonic_params.py:310:80: E501 line too long (87 > 79 characters)\n./tests/test_harmonic_params.py:312:80: E501 line too long (94 > 79 characters)\n./tests/test_harmonic_params.py:314:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:315:80: E501 line too long (102 > 79 characters)\n./tests/test_harmonic_params.py:316:80: E501 line too long (99 > 79 characters)\n./tests/test_harmonic_params.py:318:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:320:80: E501 line too long (109 > 79 characters)\n./tests/test_harmonic_params.py:322:1: E302 expected 2 blank lines, found 1\n./tests/test_harmonic_params.py:322:80: E501 line too long (80 > 79 characters)\n./tests/test_harmonic_params.py:326:80: E501 line too long (80 > 79 characters)\n./tests/test_harmonic_params.py:327:80: E501 line too long (83 > 79 characters)\n./tests/test_harmonic_params.py:328:80: E501 line too long (82 > 79 characters)\n./tests/test_harmonic_params.py:329:80: E501 line too long (84 > 79 characters)\n./tests/test_harmonic_params.py:331:80: E501 line too long (92 > 79 characters)\n./tests/test_dask_flood_mapper.py:170:80: E501 line too long (84 > 79 characters)\n./tests/test_dask_flood_mapper.py:171:80: E501 line too long (85 > 79 characters)\n./tests/test_dask_flood_mapper.py:274:80: E501 line too long (83 > 79 characters)\n./tests/test_dask_flood_mapper.py:286:80: E501 line too long (84 > 79 characters)\n./tests/test_dask_flood_mapper.py:287:80: E501 line too long (83 > 79 characters)\n./tests/test_dask_flood_mapper.py:292:80: E501 line too long (88 > 79 characters)\n./tests/test_dask_flood_mapper.py:293:80: E501 line too long (82 > 79 characters)\n./tests/test_dask_flood_mapper.py:304:80: E501 line too long (80 > 79 characters)\n./tests/test_dask_flood_mapper.py:379:80: E501 line too long (82 > 79 characters)\n./tests/test_dask_flood_mapper.py:411:80: E501 line too long (83 > 79 characters)\n./tests/test_dask_flood_mapper.py:412:80: E501 line too long (83 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:32:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:33:80: E501 line too long (89 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:69:80: E501 line too long (87 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:87:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:104:80: E501 line too long (85 > 79 characters)\n./src/dask_flood_mapper/harmonic_params.py:110:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/processing.py:83:80: E501 line too long (80 > 79 characters)\n./src/dask_flood_mapper/processing.py:156:80: E501 line too long (80 > 79 characters)\n./src/dask_flood_mapper/calculation.py:7:80: E501 line too long (85 > 79 characters)\n./src/dask_flood_mapper/app.py:27:80: E501 line too long (84 > 79 characters)\n./src/dask_flood_mapper/flood.py:128:80: E501 line too long (82 > 79 characters)\n./src/dask_flood_mapper/flood.py:242:80: E501 line too long (82 > 79 characters)\n./src/dask_flood_mapper/flood.py:279:80: E501 line too long (86 > 79 characters)"
+                        },
+                        {
+                            "valid": true,
+                            "message": "Dockerfile files are compliant with hadolint standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-jenkins_exit_status",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "hadolint",
+                                "lang": "Dockerfile",
+                                "version": "v2.8.0-0-g398770f-dirty",
+                                "docker": {
+                                    "image": "hadolint/hadolint:2.8.0-alpine",
+                                    "reviewed": "2021-06-21"
+                                },
+                                "ci": {
+                                    "name": "QC.Sty github.com/interTwin-eu/dask-flood-mapper hadolint",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "hadolint Dockerfile --failure-threshold error"
+                                    ],
+                                    "stdout_text": "",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/115/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {}
+                        },
+                        {
+                            "valid": true,
+                            "message": "JSON files are compliant with jsonlint standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-jenkins_exit_status",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "jsonlint",
+                                "lang": "JSON",
+                                "version": "1.6.3",
+                                "docker": {
+                                    "dockerfile": "QC.Sty/jsonlint/Dockerfile",
+                                    "reviewed": "2021-11-23"
+                                },
+                                "ci": {
+                                    "name": "QC.Sty github.com/interTwin-eu/dask-flood-mapper jsonlint",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "jsonlint-cli \"**/*.json\""
+                                    ],
+                                    "stdout_text": "",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/124/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {}
+                        }
+                    ],
+                    "valid": false,
+                    "required_for_next_level_badge": true
+                }
+            },
+            "coverage": {
+                "percentage": 0,
+                "total_subcriteria": 1,
+                "success_subcriteria": 0
+            }
+        },
+        "QC.Uni": {
+            "valid": false,
+            "subcriteria": {
+                "QC.Uni01": {
+                    "description": "Are the tests passing through an automated means?",
+                    "requirement_level": "MUST",
+                    "hint": "Please check & solve the failing test cases found by the {tool_name} tool",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "Test cases are not passing using None testing framework",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-jenkins_exit_status",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "pytest",
+                                "lang": "Python",
+                                "version": "7.1.3",
+                                "docker": {
+                                    "image": "eoscsynergy/sqaaas-pytest:7.1.3-alpha",
+                                    "reviewed": "2023-08-09"
+                                },
+                                "ci": {
+                                    "name": "QC.Uni github.com/interTwin-eu/dask-flood-mapper pytest",
+                                    "status": "FAILED",
+                                    "stdout_command": [
+                                        "pytest  --json-report  --json-report-indent 4"
+                                    ],
+                                    "stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/interTwin-eu/dask-flood-mapper, configfile: pyproject.toml\nplugins: metadata-3.0.0, json-report-1.5.0\ncollected 0 items / 3 errors\n\n==================================== ERRORS ====================================\n__________________ ERROR collecting tests/test_acceptance.py ___________________\nImportError while importing test module '/sqaaas-build/github.com/interTwin-eu/dask-flood-mapper/tests/test_acceptance.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/local/lib/python3.9/importlib/__init__.py:127: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntests/__init__.py:1: in <module>\n    from dask.distributed import Client\nE   ModuleNotFoundError: No module named 'dask'\n_______________ ERROR collecting tests/test_dask_flood_mapper.py _______________\nImportError while importing test module '/sqaaas-build/github.com/interTwin-eu/dask-flood-mapper/tests/test_dask_flood_mapper.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/local/lib/python3.9/importlib/__init__.py:127: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntests/__init__.py:1: in <module>\n    from dask.distributed import Client\nE   ModuleNotFoundError: No module named 'dask'\n________________ ERROR collecting tests/test_harmonic_params.py ________________\nImportError while importing test module '/sqaaas-build/github.com/interTwin-eu/dask-flood-mapper/tests/test_harmonic_params.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/local/lib/python3.9/importlib/__init__.py:127: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntests/__init__.py:1: in <module>\n    from dask.distributed import Client\nE   ModuleNotFoundError: No module named 'dask'\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n=========================== short test summary info ============================\nERROR tests/test_acceptance.py\nERROR tests/test_dask_flood_mapper.py\nERROR tests/test_harmonic_params.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!\n============================== 3 errors in 0.28s ===============================",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/133/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {}
+                        }
+                    ],
+                    "valid": false,
+                    "required_for_next_level_badge": true
+                }
+            },
+            "coverage": {
+                "percentage": 0,
+                "total_subcriteria": 1,
+                "success_subcriteria": 0
+            }
+        },
+        "QC.Ver": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Ver01.0": {
+                    "description": "Are tags being used for releasing software",
+                    "requirement_level": "MUST",
+                    "hint": "Git tags are a convenient way to release software. This subcriterion checks if any git tag is present in the code history. More info on it-scm.com/book/en/v2/Git-Basics-Tagging\" target=\"_blank\">git tagging</a>",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "The code repository uses tags for releasing new software versions",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-is_semver",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "get_git_tags.py",
+                                "lang": "Semantic Versioning",
+                                "version": "latest",
+                                "docker": {
+                                    "dockerfile": "QC.Ver/Dockerfile",
+                                    "reviewed": "2022-05-10"
+                                },
+                                "ci": {
+                                    "name": "QC.Ver github.com/interTwin-eu/dask-flood-mapper get_git_tags.py",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "get_git_tags.py"
+                                    ],
+                                    "stdout_text": "['v0.1.4', 'v0.1.3', 'v0.1.0']",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/142/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": [
+                                "v0.1.4",
+                                "v0.1.3",
+                                "v0.1.0"
+                            ]
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Ver01": {
+                    "description": "Is the latest release compliant with Semantic Versioning (SemVer) specification?",
+                    "requirement_level": "SHOULD",
+                    "hint": "Latest tag must be compliant with <a href=\"https://semver.org\" target=\"_blank\">SemVer specification</a>",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "Latest release tag v0.1.4 found, but is not SemVer compliant",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-is_semver",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "get_git_tags.py",
+                                "lang": "Semantic Versioning",
+                                "version": "latest",
+                                "docker": {
+                                    "dockerfile": "QC.Ver/Dockerfile",
+                                    "reviewed": "2022-05-10"
+                                },
+                                "ci": {
+                                    "name": "QC.Ver github.com/interTwin-eu/dask-flood-mapper get_git_tags.py",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "get_git_tags.py"
+                                    ],
+                                    "stdout_text": "['v0.1.4', 'v0.1.3', 'v0.1.0']",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/142/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": [
+                                "v0.1.4",
+                                "v0.1.3",
+                                "v0.1.0"
+                            ]
+                        }
+                    ],
+                    "valid": false,
+                    "required_for_next_level_badge": false
+                },
+                "QC.Ver02": {
+                    "description": "Are all release tags with Semantic Versioning (SemVer) specification?",
+                    "requirement_level": "SHOULD",
+                    "hint": "Existent release tags shall be <a href=\"https://semver.org\" target=\"_blank\">SemVer</a> compliant for this subcriterion to be successful",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "Not all release tags are SemVer compliant",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-is_semver",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "get_git_tags.py",
+                                "lang": "Semantic Versioning",
+                                "version": "latest",
+                                "docker": {
+                                    "dockerfile": "QC.Ver/Dockerfile",
+                                    "reviewed": "2022-05-10"
+                                },
+                                "ci": {
+                                    "name": "QC.Ver github.com/interTwin-eu/dask-flood-mapper get_git_tags.py",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "get_git_tags.py"
+                                    ],
+                                    "stdout_text": "['v0.1.4', 'v0.1.3', 'v0.1.0']",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/dask-flood-mapper.assess.sqaaas/job/main/1/execution/node/142/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/dask-flood-mapper.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": [
+                                "v0.1.4",
+                                "v0.1.3",
+                                "v0.1.0"
+                            ]
+                        }
+                    ],
+                    "valid": false,
+                    "required_for_next_level_badge": false
+                }
+            },
+            "coverage": {
+                "percentage": 33,
+                "total_subcriteria": 3,
+                "success_subcriteria": 1
+            }
+        }
+    },
+    "badge": {
+        "software": {
+            "criteria": {
+                "bronze": {
+                    "to_fulfill": [
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Lic"
+                    ],
+                    "missing": [],
+                    "fulfilled": [
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Lic"
+                    ]
+                },
+                "silver": {
+                    "to_fulfill": [
+                        "QC.Met",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Lic"
+                    ],
+                    "missing": [],
+                    "fulfilled": [
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Met",
+                        "QC.Lic",
+                        "QC.Ver"
+                    ]
+                },
+                "gold": {
+                    "to_fulfill": [
+                        "QC.Sty",
+                        "QC.Uni",
+                        "QC.Met",
+                        "QC.Sec",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Lic"
+                    ],
+                    "missing": [
+                        "QC.Sty",
+                        "QC.Uni"
+                    ],
+                    "fulfilled": [
+                        "QC.Met",
+                        "QC.Sec",
+                        "QC.Ver",
+                        "QC.Doc",
+                        "QC.Acc",
+                        "QC.Lic"
+                    ]
+                }
+            },
+            "data": {
+                "entityType": "Assertion",
+                "id": "68469403c1f6872aa3036cc0",
+                "entityId": "UAL3tB5ZRni-Cv46zM0wMg",
+                "openBadgeId": "https://api.eu.badgr.io/public/assertions/UAL3tB5ZRni-Cv46zM0wMg",
+                "createdAt": "2025-06-09T07:57:55.109510753Z",
+                "createdBy": "aS1lWKgIR4u8bGjPZUzAyg",
+                "badgeclass": "IDUsZJpNQPuiJpPwmJ8iJw",
+                "badgeclassOpenBadgeId": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw",
+                "issuer": "aS1lWKgIR4u8bGjPZUzAyg",
+                "issuerOpenBadgeId": "https://api.eu.badgr.io/public/issuers/aS1lWKgIR4u8bGjPZUzAyg",
+                "image": "https://api.eu.badgr.io/public/assertions/UAL3tB5ZRni-Cv46zM0wMg/image",
+                "recipient": {
+                    "identity": "sha256$c674371e637ef9c7059e4a0535822fd6fbe7ad964381105716a4950a7b66cd5b",
+                    "hashed": true,
+                    "type": "url",
+                    "salt": "i1AAA3cfDEYXfgQR",
+                    "plaintextIdentity": "https://github.com/interTwin-eu/dask-flood-mapper"
+                },
+                "issuedOn": "2025-06-09T07:57:55.109511196Z",
+                "narrative": "Repository 'https://github.com/interTwin-eu/dask-flood-mapper' at version '96c988683360d714ab75db8ccabc633ebd7d12b6' passed successfully the following quality criteria: QC.Met QC.Sec QC.Ver QC.Doc QC.Acc QC.Lic",
+                "evidence": [
+                    {
+                        "url": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/dask-flood-mapper.assess.sqaaas/main/.report/assessment_output.json",
+                        "narrative": "SQAaaS (version: 3.5.0) report "
+                    }
+                ],
+                "revoked": false,
+                "revocationReason": null,
+                "acceptance": "Unaccepted",
+                "expires": null,
+                "extensions": {},
+                "assertionRef": {
+                    "assertionUrl": "https://api.eu.badgr.io/public/assertions/UAL3tB5ZRni-Cv46zM0wMg"
+                },
+                "badgeRef": {
+                    "badgeUrl": "https://api.eu.badgr.io/public/badges/IDUsZJpNQPuiJpPwmJ8iJw"
+                },
+                "issuerRef": {
+                    "issuerUrl": "https://api.eu.badgr.io/public/issuers/aS1lWKgIR4u8bGjPZUzAyg"
+                },
+                "pending": null,
+                "source": "local",
+                "sourceUrl": null,
+                "originalJson": null,
+                "imagePath": "uploads/badges/assertion-UAL3tB5ZRni-Cv46zM0wMg.png",
+                "ob3AwardProperties": null
+            },
+            "share": "<!--\nSPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>\nSPDX-FileContributor: Pablo Orviz <orviz@ifca.unican.es>\n\nSPDX-License-Identifier: GPL-3.0-only\n-->\n\n<blockquote class=\"badgr-badge\" style=\"font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;\"><a href=\"https://api.eu.badgr.io/public/assertions/UAL3tB5ZRni-Cv46zM0wMg?identity__url=https%3A//github.com/EOSC-synergy/dask-flood-mapper.assess.sqaaas/commit/191e8fe7f5185939a111e988576b3b1832a9443c\"><img width=\"120px\" height=\"120px\" src=\"https://api.eu.badgr.io/public/assertions/UAL3tB5ZRni-Cv46zM0wMg/image\"></a><script async=\"async\" src=\"https://eu.badgr.com/assets/widgets.bundle.js\"></script></blockquote>",
+            "verification_url": "https://badgecheck.io/?url=https%3A%2F%2Fapi.eu.badgr.io%2Fpublic%2Fassertions%2FUAL3tB5ZRni-Cv46zM0wMg?identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fdask-flood-mapper.assess.sqaaas%2Fcommit%2F191e8fe7f5185939a111e988576b3b1832a9443c&amp;identity__url=https%3A%2F%2Fgithub.com%2FEOSC-synergy%2Fdask-flood-mapper.assess.sqaaas%2Fcommit%2F191e8fe7f5185939a111e988576b3b1832a9443c"
+        }
+    }
+}
