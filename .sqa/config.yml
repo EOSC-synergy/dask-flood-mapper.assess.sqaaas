@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-crimson-horse.sh
-        container: qc.acc_bumpy-seashell-axolotl
+        - /usr/bin/env sh .sqa/script.snazzy-burgundy-squirrel.sh
+        container: qc.acc_jumpy-russet-cichlid
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-platinum-bobcat.sh
-        container: qc.doc_flimsy-brown-boar
+        - /usr/bin/env sh .sqa/script.muggy-flax-antelope.sh
+        container: qc.doc_lumpy-brass-snake
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-corn-tetra.sh
-        container: qc.doc_cloudy-asparagus-retriever
+        - /usr/bin/env sh .sqa/script.snoopy-ochre-squid.sh
+        container: qc.doc_hasty-copper-impala
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-magnolia-anteater.sh
-        container: qc.doc_lousy-charcoal-fowl
+        - /usr/bin/env sh .sqa/script.cranky-black-mastiff.sh
+        container: qc.doc_jumpy-rust-clam
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-crimson-guppy.sh
-        container: qc.doc_whiny-rust-badger
+        - /usr/bin/env sh .sqa/script.muzzy-aqua-cow.sh
+        container: qc.doc_grumpy-ochre-nightingale
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-wisteria-gibbon.sh
-        container: qc.lic_nerdy-champagne-warthog
+        - /usr/bin/env sh .sqa/script.goopy-ruby-markhor.sh
+        container: qc.lic_skinny-celadon-saola
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-mustard-penguin.sh
-        container: qc.met_beady-orange-gopher
+        - /usr/bin/env sh .sqa/script.gloppy-russet-chipmunk.sh
+        container: qc.met_squirrely-malachite-bonobo
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-puce-dugong.sh
-        container: qc.sec_skinny-tan-dragonfly
+        - /usr/bin/env sh .sqa/script.sunny-heliotrope-walrus.sh
+        container: qc.sec_blurry-vermilion-hyena
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-cornflower-millipede.sh
-        container: qc.sty_silly-seashell-donkey
+        - /usr/bin/env sh .sqa/script.skimpy-rose-chipmunk.sh
+        container: qc.sty_blurry-ruby-cougar
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-charcoal-spider.sh
-        container: qc.sty_seedy-brass-otter
+        - /usr/bin/env sh .sqa/script.baggy-aquamarine-wallaby.sh
+        container: qc.sty_zippy-xanthic-buzzard
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-ivory-tapir.sh
-        container: qc.sty_nippy-ecru-retriever
+        - /usr/bin/env sh .sqa/script.snippy-purple-sheepdog.sh
+        container: qc.sty_gloppy-cardinal-grouse
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-green-turkey.sh
-        container: qc.uni_bumpy-peach-tzu
+        - /usr/bin/env sh .sqa/script.squirrely-cardinal-toad.sh
+        container: qc.uni_crabby-seashell-malamute
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-cream-cichlid.sh
-        container: qc.ver_ugly-taupe-argentino
+        - /usr/bin/env sh .sqa/script.scanty-flax-iguana.sh
+        container: qc.ver_flimsy-red-jellyfish
 timeout: 5400
