@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-burgundy-squirrel.sh
-        container: qc.acc_jumpy-russet-cichlid
+        - /usr/bin/env sh .sqa/script.cozy-pumpkin-robin.sh
+        container: qc.acc_randy-yellow-uguisu
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-flax-antelope.sh
-        container: qc.doc_lumpy-brass-snake
+        - /usr/bin/env sh .sqa/script.chummy-emerald-ostrich.sh
+        container: qc.doc_tasty-auburn-lionfish
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-ochre-squid.sh
-        container: qc.doc_hasty-copper-impala
+        - /usr/bin/env sh .sqa/script.greasy-amber-giraffe.sh
+        container: qc.doc_snippy-bronze-heron
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-black-mastiff.sh
-        container: qc.doc_jumpy-rust-clam
+        - /usr/bin/env sh .sqa/script.nerdy-mauve-angelfish.sh
+        container: qc.doc_blurry-buff-butterfly
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-aqua-cow.sh
-        container: qc.doc_grumpy-ochre-nightingale
+        - /usr/bin/env sh .sqa/script.tasty-taupe-hornet.sh
+        container: qc.doc_slaphappy-lemon-giraffe
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-ruby-markhor.sh
-        container: qc.lic_skinny-celadon-saola
+        - /usr/bin/env sh .sqa/script.nerdy-periwinkle-butterfly.sh
+        container: qc.lic_flimsy-periwinkle-uguisu
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-russet-chipmunk.sh
-        container: qc.met_squirrely-malachite-bonobo
+        - /usr/bin/env sh .sqa/script.lousy-thistle-yak.sh
+        container: qc.met_slimy-copper-tarsier
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-heliotrope-walrus.sh
-        container: qc.sec_blurry-vermilion-hyena
+        - /usr/bin/env sh .sqa/script.cozy-grey-dunker.sh
+        container: qc.sec_flimsy-gamboge-havanese
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-rose-chipmunk.sh
-        container: qc.sty_blurry-ruby-cougar
+        - /usr/bin/env sh .sqa/script.wimpy-xanthic-bison.sh
+        container: qc.sty_craggy-indigo-rat
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-aquamarine-wallaby.sh
-        container: qc.sty_zippy-xanthic-buzzard
+        - /usr/bin/env sh .sqa/script.paltry-tomato-dhole.sh
+        container: qc.sty_nerdy-lime-lemur
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-purple-sheepdog.sh
-        container: qc.sty_gloppy-cardinal-grouse
+        - /usr/bin/env sh .sqa/script.wiggy-periwinkle-barracuda.sh
+        container: qc.sty_bumpy-gamboge-corgi
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-cardinal-toad.sh
-        container: qc.uni_crabby-seashell-malamute
+        - /usr/bin/env sh .sqa/script.shabby-jade-toad.sh
+        container: qc.uni_surly-green-panda
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-flax-iguana.sh
-        container: qc.ver_flimsy-red-jellyfish
+        - /usr/bin/env sh .sqa/script.pasty-olive-newt.sh
+        container: qc.ver_ugly-rust-tarantula
 timeout: 5400
