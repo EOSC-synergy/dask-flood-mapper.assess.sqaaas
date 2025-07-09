@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-tomato-tzu.sh
-        container: qc.acc_whiny-turquoise-emu
+        - /usr/bin/env sh .sqa/script.squirrely-cream-quail.sh
+        container: qc.acc_surly-cerise-bombay
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-periwinkle-butterfly.sh
-        container: qc.doc_baggy-olivine-crab
+        - /usr/bin/env sh .sqa/script.stuffy-aquamarine-capuchin.sh
+        container: qc.doc_squeaky-asparagus-caterpillar
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-purple-bee.sh
-        container: qc.doc_snoopy-lime-foxhound
+        - /usr/bin/env sh .sqa/script.flaky-harlequin-numbat.sh
+        container: qc.doc_wiggy-purple-pinscher
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-aqua-woodpecker.sh
-        container: qc.doc_muggy-mustard-ladybird
+        - /usr/bin/env sh .sqa/script.grumpy-alizarin-chicken.sh
+        container: qc.doc_squirrely-smalt-spoonbill
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-firebrick-lemur.sh
-        container: qc.doc_woozy-carmine-bombay
+        - /usr/bin/env sh .sqa/script.sleazy-myrtle-moose.sh
+        container: qc.doc_ready-olive-dingo
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-cream-hyena.sh
-        container: qc.lic_shaky-black-uakari
+        - /usr/bin/env sh .sqa/script.craggy-mauve-serval.sh
+        container: qc.lic_homey-peach-bee
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-charcoal-jackal.sh
-        container: qc.met_lousy-cerise-oriole
+        - /usr/bin/env sh .sqa/script.dorky-razzmatazz-wallaby.sh
+        container: qc.met_bumpy-tangerine-bordeaux
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-magenta-barracuda.sh
-        container: qc.sec_flimsy-seashell-frog
+        - /usr/bin/env sh .sqa/script.craggy-emerald-gopher.sh
+        container: qc.sec_flimsy-aquamarine-whippet
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-cinnamon-camel.sh
-        container: qc.sty_cheeky-buff-monster
+        - /usr/bin/env sh .sqa/script.squirrely-cardinal-squid.sh
+        container: qc.sty_skinny-sepia-jaguar
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-ultramarine-monkey.sh
-        container: qc.sty_stuffy-razzmatazz-mist
+        - /usr/bin/env sh .sqa/script.shaky-aquamarine-bear.sh
+        container: qc.sty_droopy-coral-chin
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-xanthic-gar.sh
-        container: qc.sty_scanty-asparagus-forest
+        - /usr/bin/env sh .sqa/script.sleepy-zucchini-millipede.sh
+        container: qc.sty_freaky-lilac-saola
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-alizarin-fowl.sh
-        container: qc.uni_homey-zucchini-tapir
+        - /usr/bin/env sh .sqa/script.gummy-burgundy-snail.sh
+        container: qc.uni_shaggy-ecru-bear
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-goldenrod-jellyfish.sh
-        container: qc.ver_messy-burgundy-neanderthal
+        - /usr/bin/env sh .sqa/script.fuzzy-salmon-mau.sh
+        container: qc.ver_wiggy-cyan-catfish
 timeout: 5400
