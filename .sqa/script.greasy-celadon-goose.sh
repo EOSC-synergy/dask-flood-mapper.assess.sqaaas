@@ -5,6 +5,5 @@
 
 (
 cd github.com/interTwin-eu/dask-flood-mapper &&
-    pip install pytest&&
-    pytest -sv
+    pytest  --json-report  --json-report-indent 4
 )
