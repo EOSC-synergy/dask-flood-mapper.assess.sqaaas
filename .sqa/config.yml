@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-white-dachshund.sh
-        container: qc.acc_homey-lilac-shrimp
+        - /usr/bin/env sh .sqa/script.jumpy-chestnut-donkey.sh
+        container: qc.acc_baggy-cerise-balinese
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-ivory-dogfish.sh
-        container: qc.doc_cozy-brass-dingo
+        - /usr/bin/env sh .sqa/script.dorky-yellow-millipede.sh
+        container: qc.doc_frumpy-copper-stoat
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-plum-fousek.sh
-        container: qc.doc_muggy-bistre-clam
+        - /usr/bin/env sh .sqa/script.snippy-platinum-vole.sh
+        container: qc.doc_nerdy-lime-capybara
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-burgundy-zebu.sh
-        container: qc.doc_surly-asparagus-slug
+        - /usr/bin/env sh .sqa/script.skinny-bronze-zebra.sh
+        container: qc.doc_zippy-khaki-monster
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-salmon-hyena.sh
-        container: qc.doc_sunny-chocolate-chinchilla
+        - /usr/bin/env sh .sqa/script.homely-cobalt-mist.sh
+        container: qc.doc_homely-copper-fish
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-cinnabar-monster.sh
-        container: qc.lic_lumpy-rose-camel
+        - /usr/bin/env sh .sqa/script.blurry-charcoal-bullfrog.sh
+        container: qc.lic_lumpy-ivory-koala
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-pink-quail.sh
-        container: qc.met_stinky-mauve-blue
+        - /usr/bin/env sh .sqa/script.snappy-sangria-goose.sh
+        container: qc.met_beady-orange-mau
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-cyan-grouse.sh
-        container: qc.sec_nerdy-xanthic-tuatara
+        - /usr/bin/env sh .sqa/script.slimy-violet-emu.sh
+        container: qc.sec_pretty-green-quoll
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-mauve-urchin.sh
-        container: qc.sty_frumpy-wheat-mandrill
+        - /usr/bin/env sh .sqa/script.seedy-lilac-dragon.sh
+        container: qc.sty_snappy-olivine-chamois
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-brown-bird.sh
-        container: qc.sty_leaky-turquoise-ostrich
+        - /usr/bin/env sh .sqa/script.gloppy-lilac-chipmunk.sh
+        container: qc.sty_boozy-thistle-moose
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-magenta-kudu.sh
-        container: qc.sty_crabby-grey-spaniel
+        - /usr/bin/env sh .sqa/script.woolly-yellow-deer.sh
+        container: qc.sty_trippy-firebrick-bison
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-tomato-crocodile.sh
-        container: qc.uni_muzzy-zucchini-slug
+        - /usr/bin/env sh .sqa/script.snoopy-silver-clam.sh
+        container: qc.uni_bluesy-gamboge-yak
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-mauve-blue.sh
-        container: qc.ver_snoopy-tomato-skunk
+        - /usr/bin/env sh .sqa/script.trippy-dandelion-sheep.sh
+        container: qc.ver_sloppy-chestnut-yak
 timeout: 5400
