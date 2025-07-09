@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-saffron-bongo.sh
-        container: qc.acc_zippy-platinum-deer
+        - /usr/bin/env sh .sqa/script.flabby-white-dachshund.sh
+        container: qc.acc_homey-lilac-shrimp
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-persimmon-coati.sh
-        container: qc.doc_slimy-taupe-gharial
+        - /usr/bin/env sh .sqa/script.chummy-ivory-dogfish.sh
+        container: qc.doc_cozy-brass-dingo
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-salmon-pinscher.sh
-        container: qc.doc_sleepy-mauve-zebra
+        - /usr/bin/env sh .sqa/script.pretty-plum-fousek.sh
+        container: qc.doc_muggy-bistre-clam
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-seashell-affenpinscher.sh
-        container: qc.doc_surly-khaki-eagle
+        - /usr/bin/env sh .sqa/script.pokey-burgundy-zebu.sh
+        container: qc.doc_surly-asparagus-slug
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-cinnamon-wallaby.sh
-        container: qc.doc_breezy-orchid-tarsier
+        - /usr/bin/env sh .sqa/script.leaky-salmon-hyena.sh
+        container: qc.doc_sunny-chocolate-chinchilla
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-aquamarine-uguisu.sh
-        container: qc.lic_clammy-tomato-penguin
+        - /usr/bin/env sh .sqa/script.messy-cinnabar-monster.sh
+        container: qc.lic_lumpy-rose-camel
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-denim-hornet.sh
-        container: qc.met_baggy-lilac-grouse
+        - /usr/bin/env sh .sqa/script.paltry-pink-quail.sh
+        container: qc.met_stinky-mauve-blue
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-green-dormouse.sh
-        container: qc.sec_freaky-alizarin-duck
+        - /usr/bin/env sh .sqa/script.skanky-cyan-grouse.sh
+        container: qc.sec_nerdy-xanthic-tuatara
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-white-serval.sh
-        container: qc.sty_stealthy-ultramarine-capuchin
+        - /usr/bin/env sh .sqa/script.woozy-mauve-urchin.sh
+        container: qc.sty_frumpy-wheat-mandrill
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-lemon-dragonfly.sh
-        container: qc.sty_crabby-chartreuse-chipmunk
+        - /usr/bin/env sh .sqa/script.wheezy-brown-bird.sh
+        container: qc.sty_leaky-turquoise-ostrich
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-yellow-blue.sh
-        container: qc.sty_homey-periwinkle-mayfly
+        - /usr/bin/env sh .sqa/script.sloppy-magenta-kudu.sh
+        container: qc.sty_crabby-grey-spaniel
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-pink-urchin.sh
-        container: qc.uni_slimy-firebrick-collie
+        - /usr/bin/env sh .sqa/script.sleazy-tomato-crocodile.sh
+        container: qc.uni_muzzy-zucchini-slug
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-jade-spitz.sh
-        container: qc.ver_shabby-lavender-lemur
+        - /usr/bin/env sh .sqa/script.greasy-mauve-blue.sh
+        container: qc.ver_snoopy-tomato-skunk
 timeout: 5400
