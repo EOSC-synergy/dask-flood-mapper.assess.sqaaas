@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-chestnut-donkey.sh
-        container: qc.acc_baggy-cerise-balinese
+        - /usr/bin/env sh .sqa/script.chewy-cinnabar-squirt.sh
+        container: qc.acc_scaly-pumpkin-rhinoceros
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-yellow-millipede.sh
-        container: qc.doc_frumpy-copper-stoat
+        - /usr/bin/env sh .sqa/script.flaky-sepia-audemer.sh
+        container: qc.doc_homey-corn-chin
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-platinum-vole.sh
-        container: qc.doc_nerdy-lime-capybara
+        - /usr/bin/env sh .sqa/script.shabby-vermilion-chinook.sh
+        container: qc.doc_skimpy-ochre-wolf
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-bronze-zebra.sh
-        container: qc.doc_zippy-khaki-monster
+        - /usr/bin/env sh .sqa/script.crappy-mauve-dunker.sh
+        container: qc.doc_squeaky-ochre-jackal
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-cobalt-mist.sh
-        container: qc.doc_homely-copper-fish
+        - /usr/bin/env sh .sqa/script.whiny-vermilion-discus.sh
+        container: qc.doc_sleepy-tomato-warthog
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-charcoal-bullfrog.sh
-        container: qc.lic_lumpy-ivory-koala
+        - /usr/bin/env sh .sqa/script.baggy-sangria-newt.sh
+        container: qc.lic_leaky-harlequin-birman
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-sangria-goose.sh
-        container: qc.met_beady-orange-mau
+        - /usr/bin/env sh .sqa/script.homely-malachite-kiwi.sh
+        container: qc.met_gimpy-wheat-macaque
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-violet-emu.sh
-        container: qc.sec_pretty-green-quoll
+        - /usr/bin/env sh .sqa/script.bluesy-coral-tiger.sh
+        container: qc.sec_scanty-xanthic-quail
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-lilac-dragon.sh
-        container: qc.sty_snappy-olivine-chamois
+        - /usr/bin/env sh .sqa/script.flabby-cinnamon-lion.sh
+        container: qc.sty_freaky-ochre-coyote
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-lilac-chipmunk.sh
-        container: qc.sty_boozy-thistle-moose
+        - /usr/bin/env sh .sqa/script.muggy-amaranth-oriole.sh
+        container: qc.sty_squirrely-linen-woodpecker
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-yellow-deer.sh
-        container: qc.sty_trippy-firebrick-bison
+        - /usr/bin/env sh .sqa/script.grumpy-carmine-gecko.sh
+        container: qc.sty_sloppy-mauve-owl
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-silver-clam.sh
-        container: qc.uni_bluesy-gamboge-yak
+        - /usr/bin/env sh .sqa/script.whiny-coral-vulture.sh
+        container: qc.uni_homey-xanthic-opossum
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-dandelion-sheep.sh
-        container: qc.ver_sloppy-chestnut-yak
+        - /usr/bin/env sh .sqa/script.flimsy-malachite-toucan.sh
+        container: qc.ver_breezy-violet-millipede
 timeout: 5400
