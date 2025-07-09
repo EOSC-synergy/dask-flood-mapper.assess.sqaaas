@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-burgundy-cuscus.sh
-        container: qc.acc_breezy-myrtle-panda
+        - /usr/bin/env sh .sqa/script.chewy-corn-blue.sh
+        container: qc.acc_skinny-azure-monster
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-puce-fly.sh
-        container: qc.doc_trippy-carmine-uakari
+        - /usr/bin/env sh .sqa/script.ugly-vermilion-hare.sh
+        container: qc.doc_shabby-persimmon-oyster
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-razzmatazz-jellyfish.sh
-        container: qc.doc_geeky-cobalt-bracke
+        - /usr/bin/env sh .sqa/script.homely-wheat-corgi.sh
+        container: qc.doc_geeky-ochre-fly
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-pumpkin-wrasse.sh
-        container: qc.doc_tasty-smalt-lizard
+        - /usr/bin/env sh .sqa/script.baggy-turquoise-pig.sh
+        container: qc.doc_goopy-ultramarine-tzu
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-ruby-opossum.sh
-        container: qc.doc_whiny-wisteria-fly
+        - /usr/bin/env sh .sqa/script.cozy-red-koala.sh
+        container: qc.doc_stuffy-burgundy-iguana
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-lime-devil.sh
-        container: qc.lic_flimsy-smalt-wallaby
+        - /usr/bin/env sh .sqa/script.shaggy-orchid-rabbit.sh
+        container: qc.lic_scummy-brown-fossa
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-orange-collie.sh
-        container: qc.met_cloudy-rust-jackal
+        - /usr/bin/env sh .sqa/script.goopy-russet-saola.sh
+        container: qc.met_muggy-plum-moose
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-silver-liger.sh
-        container: qc.sec_scaly-gold-tortoise
+        - /usr/bin/env sh .sqa/script.nippy-persimmon-gar.sh
+        container: qc.sec_skinny-gold-moose
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-mauve-opossum.sh
-        container: qc.sty_cloudy-crimson-robin
+        - /usr/bin/env sh .sqa/script.flimsy-denim-crane.sh
+        container: qc.sty_gimpy-cardinal-camel
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-bronze-collie.sh
-        container: qc.sty_scaly-emerald-dragon
+        - /usr/bin/env sh .sqa/script.clammy-viridian-lemming.sh
+        container: qc.sty_homey-aquamarine-whale
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-flax-mongrel.sh
-        container: qc.sty_randy-lime-chameleon
+        - /usr/bin/env sh .sqa/script.gloppy-eggplant-wasp.sh
+        container: qc.sty_thirsty-lime-urchin
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-indigo-cockroach.sh
-        container: qc.uni_shabby-magenta-sponge
+        - /usr/bin/env sh .sqa/script.sickly-saffron-affenpinscher.sh
+        container: qc.uni_seedy-cinnabar-penguin
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-emerald-whale.sh
-        container: qc.ver_thirsty-auburn-dormouse
+        - /usr/bin/env sh .sqa/script.muzzy-ultramarine-hornet.sh
+        container: qc.ver_crabby-charcoal-whale
 timeout: 5400
