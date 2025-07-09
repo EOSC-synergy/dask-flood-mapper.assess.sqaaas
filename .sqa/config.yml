@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-puce-heron.sh
-        container: qc.acc_sunny-viridian-tetra
+        - /usr/bin/env sh .sqa/script.woolly-alizarin-barb.sh
+        container: qc.acc_tacky-gamboge-koala
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-coral-seal.sh
-        container: qc.doc_baggy-saffron-owl
+        - /usr/bin/env sh .sqa/script.lousy-apricot-dolphin.sh
+        container: qc.doc_craggy-maroon-grasshopper
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-goldenrod-whippet.sh
-        container: qc.doc_lanky-flax-spoonbill
+        - /usr/bin/env sh .sqa/script.flimsy-ultramarine-drever.sh
+        container: qc.doc_greasy-jade-bison
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-aquamarine-chamois.sh
-        container: qc.doc_scanty-orange-gar
+        - /usr/bin/env sh .sqa/script.hazy-olive-owl.sh
+        container: qc.doc_trippy-silver-vole
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-emerald-caracal.sh
-        container: qc.doc_leaky-yellow-coati
+        - /usr/bin/env sh .sqa/script.chummy-khaki-octopus.sh
+        container: qc.doc_beady-burgundy-jackal
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-alizarin-goat.sh
-        container: qc.lic_snappy-orange-olm
+        - /usr/bin/env sh .sqa/script.snippy-amethyst-mandrill.sh
+        container: qc.lic_grumpy-buff-toad
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-pink-binturong.sh
-        container: qc.met_droopy-chocolate-wolverine
+        - /usr/bin/env sh .sqa/script.lanky-heliotrope-worm.sh
+        container: qc.met_bluesy-cornflower-maltese
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-burgundy-crocodile.sh
-        container: qc.sec_gimpy-bistre-chin
+        - /usr/bin/env sh .sqa/script.pretty-pear-heron.sh
+        container: qc.sec_scummy-cream-rottweiler
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-alizarin-moth.sh
-        container: qc.sty_stinky-champagne-termite
+        - /usr/bin/env sh .sqa/script.randy-harlequin-cichlid.sh
+        container: qc.sty_skanky-grey-manatee
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-indigo-mongoose.sh
-        container: qc.sty_snippy-mauve-panda
+        - /usr/bin/env sh .sqa/script.flimsy-lilac-snail.sh
+        container: qc.sty_cloudy-cinnamon-toucan
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-tangerine-heron.sh
-        container: qc.sty_gimpy-dandelion-stingray
+        - /usr/bin/env sh .sqa/script.tasty-bronze-pig.sh
+        container: qc.sty_pretty-lavender-mongrel
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-purple-moorhen.sh
-        container: qc.uni_crabby-cardinal-yak
+        - /usr/bin/env sh .sqa/script.slaphappy-emerald-quokka.sh
+        container: qc.uni_homey-razzmatazz-bat
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-rust-fowl.sh
-        container: qc.ver_droopy-magnolia-molly
+        - /usr/bin/env sh .sqa/script.skinny-firebrick-dolphin.sh
+        container: qc.ver_jumpy-pink-bulldog
 timeout: 5400
