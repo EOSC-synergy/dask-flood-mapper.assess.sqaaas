@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-alizarin-barb.sh
-        container: qc.acc_tacky-gamboge-koala
+        - /usr/bin/env sh .sqa/script.hilly-burgundy-cuscus.sh
+        container: qc.acc_breezy-myrtle-panda
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-apricot-dolphin.sh
-        container: qc.doc_craggy-maroon-grasshopper
+        - /usr/bin/env sh .sqa/script.homely-puce-fly.sh
+        container: qc.doc_trippy-carmine-uakari
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-ultramarine-drever.sh
-        container: qc.doc_greasy-jade-bison
+        - /usr/bin/env sh .sqa/script.cheeky-razzmatazz-jellyfish.sh
+        container: qc.doc_geeky-cobalt-bracke
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-olive-owl.sh
-        container: qc.doc_trippy-silver-vole
+        - /usr/bin/env sh .sqa/script.sickly-pumpkin-wrasse.sh
+        container: qc.doc_tasty-smalt-lizard
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-khaki-octopus.sh
-        container: qc.doc_beady-burgundy-jackal
+        - /usr/bin/env sh .sqa/script.sloppy-ruby-opossum.sh
+        container: qc.doc_whiny-wisteria-fly
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-amethyst-mandrill.sh
-        container: qc.lic_grumpy-buff-toad
+        - /usr/bin/env sh .sqa/script.crabby-lime-devil.sh
+        container: qc.lic_flimsy-smalt-wallaby
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-heliotrope-worm.sh
-        container: qc.met_bluesy-cornflower-maltese
+        - /usr/bin/env sh .sqa/script.silly-orange-collie.sh
+        container: qc.met_cloudy-rust-jackal
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-pear-heron.sh
-        container: qc.sec_scummy-cream-rottweiler
+        - /usr/bin/env sh .sqa/script.wiggy-silver-liger.sh
+        container: qc.sec_scaly-gold-tortoise
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-harlequin-cichlid.sh
-        container: qc.sty_skanky-grey-manatee
+        - /usr/bin/env sh .sqa/script.freaky-mauve-opossum.sh
+        container: qc.sty_cloudy-crimson-robin
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-lilac-snail.sh
-        container: qc.sty_cloudy-cinnamon-toucan
+        - /usr/bin/env sh .sqa/script.scummy-bronze-collie.sh
+        container: qc.sty_scaly-emerald-dragon
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-bronze-pig.sh
-        container: qc.sty_pretty-lavender-mongrel
+        - /usr/bin/env sh .sqa/script.snazzy-flax-mongrel.sh
+        container: qc.sty_randy-lime-chameleon
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-emerald-quokka.sh
-        container: qc.uni_homey-razzmatazz-bat
+        - /usr/bin/env sh .sqa/script.goopy-indigo-cockroach.sh
+        container: qc.uni_shabby-magenta-sponge
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-firebrick-dolphin.sh
-        container: qc.ver_jumpy-pink-bulldog
+        - /usr/bin/env sh .sqa/script.geeky-emerald-whale.sh
+        container: qc.ver_thirsty-auburn-dormouse
 timeout: 5400
