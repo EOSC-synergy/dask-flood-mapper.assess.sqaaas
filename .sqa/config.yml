@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-emerald-hornet.sh
-        container: qc.acc_stealthy-copper-chicken
+        - /usr/bin/env sh .sqa/script.cozy-beige-abyssinian.sh
+        container: qc.acc_grumpy-azure-angora
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-cinnabar-olm.sh
-        container: qc.doc_gummy-alizarin-kudu
+        - /usr/bin/env sh .sqa/script.trippy-tangerine-orangutan.sh
+        container: qc.doc_scummy-wisteria-falcon
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-white-guppy.sh
-        container: qc.doc_cozy-teal-snake
+        - /usr/bin/env sh .sqa/script.snappy-ruby-gar.sh
+        container: qc.doc_gamy-black-millipede
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-eggplant-turkey.sh
-        container: qc.doc_whiny-seashell-toucan
+        - /usr/bin/env sh .sqa/script.trippy-platinum-ocelot.sh
+        container: qc.doc_flaky-chestnut-quetzal
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-cerise-bird.sh
-        container: qc.doc_cranky-orange-giraffe
+        - /usr/bin/env sh .sqa/script.lumpy-aqua-spoonbill.sh
+        container: qc.doc_skanky-persimmon-toad
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-lilac-okapi.sh
-        container: qc.lic_sickly-smalt-balinese
+        - /usr/bin/env sh .sqa/script.leaky-beige-kiwi.sh
+        container: qc.lic_freaky-persimmon-chihuahua
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-indigo-opossum.sh
-        container: qc.met_geeky-russet-peccary
+        - /usr/bin/env sh .sqa/script.baggy-goldenrod-affenpinscher.sh
+        container: qc.met_greasy-sapphire-mau
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-auburn-tiger.sh
-        container: qc.sec_wheezy-crimson-bloodhound
+        - /usr/bin/env sh .sqa/script.lanky-lavender-llama.sh
+        container: qc.sec_frumpy-bronze-gorilla
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-grey-barnacle.sh
-        container: qc.sty_wimpy-emerald-deer
+        - /usr/bin/env sh .sqa/script.clammy-seashell-seal.sh
+        container: qc.sty_crappy-persimmon-tarantula
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-thistle-opossum.sh
-        container: qc.sty_grumpy-malachite-albatross
+        - /usr/bin/env sh .sqa/script.smelly-chestnut-cow.sh
+        container: qc.sty_chummy-purple-squirt
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-wisteria-panda.sh
-        container: qc.sty_gamy-ultramarine-chinook
+        - /usr/bin/env sh .sqa/script.freaky-cerise-kakapo.sh
+        container: qc.sty_hasty-linen-serval
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-aquamarine-tzu.sh
-        container: qc.uni_homely-violet-manatee
+        - /usr/bin/env sh .sqa/script.tacky-wisteria-fossa.sh
+        container: qc.uni_gloppy-harlequin-tang
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-red-numbat.sh
-        container: qc.ver_goopy-ecru-emu
+        - /usr/bin/env sh .sqa/script.gimpy-tan-clam.sh
+        container: qc.ver_snippy-flax-gerbil
 timeout: 5400
