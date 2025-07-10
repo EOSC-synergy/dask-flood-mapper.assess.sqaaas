@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-russet-lion.sh
-        container: qc.acc_wheezy-russet-goat
+        - /usr/bin/env sh .sqa/script.sloppy-burgundy-echidna.sh
+        container: qc.acc_slaphappy-cobalt-uakari
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-tan-kingfisher.sh
-        container: qc.doc_hasty-bronze-mule
+        - /usr/bin/env sh .sqa/script.scanty-copper-tiger.sh
+        container: qc.doc_seedy-mauve-fossa
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-ultramarine-sloth.sh
-        container: qc.doc_sloppy-aqua-goat
+        - /usr/bin/env sh .sqa/script.skimpy-burgundy-dog.sh
+        container: qc.doc_frumpy-amethyst-oriole
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-buff-hare.sh
-        container: qc.doc_boozy-chocolate-peccary
+        - /usr/bin/env sh .sqa/script.snoopy-seashell-avocet.sh
+        container: qc.doc_shaky-coral-newfoundland
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-yellow-guppy.sh
-        container: qc.doc_lovely-brown-oriole
+        - /usr/bin/env sh .sqa/script.blurry-cinnamon-rabbit.sh
+        container: qc.doc_gamy-brass-setter
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-violet-rat.sh
-        container: qc.lic_snippy-orange-bobcat
+        - /usr/bin/env sh .sqa/script.ugly-firebrick-neanderthal.sh
+        container: qc.lic_snappy-chocolate-oyster
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-pear-cuscus.sh
-        container: qc.met_nippy-magnolia-bobcat
+        - /usr/bin/env sh .sqa/script.woolly-olive-cassowary.sh
+        container: qc.met_hasty-celadon-dragonfly
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-beige-stingray.sh
-        container: qc.sec_scanty-purple-dugong
+        - /usr/bin/env sh .sqa/script.sunny-vermilion-wallaby.sh
+        container: qc.sec_shaky-charcoal-rottweiler
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-cerulean-schnauzer.sh
-        container: qc.sty_nerdy-scarlet-beaver
+        - /usr/bin/env sh .sqa/script.muggy-lime-dog.sh
+        container: qc.sty_scaly-goldenrod-vulture
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-razzmatazz-dragon.sh
-        container: qc.sty_ugly-tangerine-zorse
+        - /usr/bin/env sh .sqa/script.scaly-viridian-chinchilla.sh
+        container: qc.sty_goopy-rust-lizard
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-eggplant-anteater.sh
-        container: qc.sty_snappy-gold-coyote
+        - /usr/bin/env sh .sqa/script.woolly-goldenrod-earwig.sh
+        container: qc.sty_jumpy-maroon-binturong
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-viridian-ray.sh
-        container: qc.uni_pasty-amethyst-squirrel
+        - /usr/bin/env sh .sqa/script.flaky-emerald-tamarin.sh
+        container: qc.uni_homely-ecru-seahorse
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-violet-wrasse.sh
-        container: qc.ver_smelly-champagne-armadillo
+        - /usr/bin/env sh .sqa/script.boozy-wheat-frigatebird.sh
+        container: qc.ver_lousy-sepia-blue
 timeout: 5400
