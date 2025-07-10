@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-beige-abyssinian.sh
-        container: qc.acc_grumpy-azure-angora
+        - /usr/bin/env sh .sqa/script.surly-russet-lion.sh
+        container: qc.acc_wheezy-russet-goat
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-tangerine-orangutan.sh
-        container: qc.doc_scummy-wisteria-falcon
+        - /usr/bin/env sh .sqa/script.tacky-tan-kingfisher.sh
+        container: qc.doc_hasty-bronze-mule
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-ruby-gar.sh
-        container: qc.doc_gamy-black-millipede
+        - /usr/bin/env sh .sqa/script.beady-ultramarine-sloth.sh
+        container: qc.doc_sloppy-aqua-goat
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-platinum-ocelot.sh
-        container: qc.doc_flaky-chestnut-quetzal
+        - /usr/bin/env sh .sqa/script.fuzzy-buff-hare.sh
+        container: qc.doc_boozy-chocolate-peccary
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-aqua-spoonbill.sh
-        container: qc.doc_skanky-persimmon-toad
+        - /usr/bin/env sh .sqa/script.wheezy-yellow-guppy.sh
+        container: qc.doc_lovely-brown-oriole
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-beige-kiwi.sh
-        container: qc.lic_freaky-persimmon-chihuahua
+        - /usr/bin/env sh .sqa/script.breezy-violet-rat.sh
+        container: qc.lic_snippy-orange-bobcat
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-goldenrod-affenpinscher.sh
-        container: qc.met_greasy-sapphire-mau
+        - /usr/bin/env sh .sqa/script.boozy-pear-cuscus.sh
+        container: qc.met_nippy-magnolia-bobcat
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-lavender-llama.sh
-        container: qc.sec_frumpy-bronze-gorilla
+        - /usr/bin/env sh .sqa/script.slaphappy-beige-stingray.sh
+        container: qc.sec_scanty-purple-dugong
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-seashell-seal.sh
-        container: qc.sty_crappy-persimmon-tarantula
+        - /usr/bin/env sh .sqa/script.bluesy-cerulean-schnauzer.sh
+        container: qc.sty_nerdy-scarlet-beaver
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-chestnut-cow.sh
-        container: qc.sty_chummy-purple-squirt
+        - /usr/bin/env sh .sqa/script.nippy-razzmatazz-dragon.sh
+        container: qc.sty_ugly-tangerine-zorse
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-cerise-kakapo.sh
-        container: qc.sty_hasty-linen-serval
+        - /usr/bin/env sh .sqa/script.goopy-eggplant-anteater.sh
+        container: qc.sty_snappy-gold-coyote
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-wisteria-fossa.sh
-        container: qc.uni_gloppy-harlequin-tang
+        - /usr/bin/env sh .sqa/script.sickly-viridian-ray.sh
+        container: qc.uni_pasty-amethyst-squirrel
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-tan-clam.sh
-        container: qc.ver_snippy-flax-gerbil
+        - /usr/bin/env sh .sqa/script.woozy-violet-wrasse.sh
+        container: qc.ver_smelly-champagne-armadillo
 timeout: 5400
