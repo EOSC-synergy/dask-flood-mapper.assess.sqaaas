@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-teal-rabbit.sh
-        container: qc.acc_shaggy-seashell-chinook
+        - /usr/bin/env sh .sqa/script.nerdy-rust-skunk.sh
+        container: qc.acc_hasty-wisteria-lemur
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-amaranth-catfish.sh
-        container: qc.doc_messy-ivory-bee
+        - /usr/bin/env sh .sqa/script.cheeky-malachite-seahorse.sh
+        container: qc.doc_shabby-ultramarine-skunk
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-rose-antelope.sh
-        container: qc.doc_slimy-plum-flounder
+        - /usr/bin/env sh .sqa/script.breezy-cinnabar-turtle.sh
+        container: qc.doc_snoopy-cornflower-moth
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-zucchini-fowl.sh
-        container: qc.doc_seedy-cinnabar-kiwi
+        - /usr/bin/env sh .sqa/script.shabby-asparagus-otter.sh
+        container: qc.doc_stealthy-chestnut-impala
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-denim-hyrax.sh
-        container: qc.doc_grumpy-zucchini-antelope
+        - /usr/bin/env sh .sqa/script.foggy-seashell-mau.sh
+        container: qc.doc_blurry-cerulean-opossum
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-plum-rhinoceros.sh
-        container: qc.lic_fuzzy-denim-bonobo
+        - /usr/bin/env sh .sqa/script.snoopy-lavender-quokka.sh
+        container: qc.lic_foggy-taupe-ostrich
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-lime-retriever.sh
-        container: qc.met_hazy-pumpkin-cockroach
+        - /usr/bin/env sh .sqa/script.clammy-rust-angelfish.sh
+        container: qc.met_cheeky-plum-nightingale
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-dandelion-ibis.sh
-        container: qc.sec_gloppy-sapphire-crane
+        - /usr/bin/env sh .sqa/script.squeaky-malachite-saola.sh
+        container: qc.sec_messy-viridian-coati
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-yellow-fossa.sh
-        container: qc.sty_lovely-yellow-shrimp
+        - /usr/bin/env sh .sqa/script.jumpy-celadon-toucan.sh
+        container: qc.sty_skimpy-plum-schnauzer
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-persimmon-goat.sh
-        container: qc.sty_goopy-pink-liger
+        - /usr/bin/env sh .sqa/script.cheeky-purple-caiman.sh
+        container: qc.sty_queasy-sangria-akita
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-vermilion-hare.sh
-        container: qc.sty_woolly-auburn-nightingale
+        - /usr/bin/env sh .sqa/script.leaky-champagne-setter.sh
+        container: qc.sty_chummy-coral-ferret
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-grey-buffalo.sh
-        container: qc.uni_sunny-firebrick-burmese
+        - /usr/bin/env sh .sqa/script.snazzy-lilac-dugong.sh
+        container: qc.uni_jumpy-plum-chihuahua
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-brown-grouse.sh
-        container: qc.ver_stuffy-auburn-birman
+        - /usr/bin/env sh .sqa/script.crabby-carmine-bullfrog.sh
+        container: qc.ver_scaly-tan-wolf
 timeout: 5400
