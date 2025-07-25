@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/npikall/dask-flood-mapper:
       branch: dev-np
-      repo: https://github.com/npikall/dask-flood-mapper/
+      repo: https://github.com/npikall/dask-flood-mapper
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/npikall/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-tangerine-tuatara.sh
-        container: qc.acc_jumpy-purple-wombat
+        - /usr/bin/env sh .sqa/script.dorky-sepia-newt.sh
+        container: qc.acc_bumpy-chestnut-uguisu
   QC.Doc:
     repos:
       github.com/npikall/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-periwinkle-monkey.sh
-        container: qc.doc_tacky-cinnamon-raccoon
+        - /usr/bin/env sh .sqa/script.pasty-thistle-elephant.sh
+        container: qc.doc_chewy-amethyst-whippet
       github.com/npikall/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-auburn-terrier.sh
-        container: qc.doc_woozy-periwinkle-scorpion
+        - /usr/bin/env sh .sqa/script.snazzy-fuchsia-magpie.sh
+        container: qc.doc_frumpy-firebrick-quoll
       github.com/npikall/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-sangria-warthog.sh
-        container: qc.doc_sloppy-auburn-dingo
+        - /usr/bin/env sh .sqa/script.hilly-razzmatazz-dollar.sh
+        container: qc.doc_sleepy-blue-beetle
       github.com/npikall/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-purple-akita.sh
-        container: qc.doc_seedy-ivory-reindeer
+        - /usr/bin/env sh .sqa/script.sunny-denim-magpie.sh
+        container: qc.doc_lousy-gamboge-barnacle
   QC.Lic:
     repos:
       github.com/npikall/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-ultramarine-jellyfish.sh
-        container: qc.lic_shabby-cinnabar-bongo
+        - /usr/bin/env sh .sqa/script.seedy-emerald-albatross.sh
+        container: qc.lic_wheezy-olivine-clam
   QC.Met:
     repos:
       github.com/npikall/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-gamboge-harrier.sh
-        container: qc.met_snappy-scarlet-wildebeest
+        - /usr/bin/env sh .sqa/script.trippy-rose-quokka.sh
+        container: qc.met_shabby-auburn-grasshopper
   QC.Sec:
     repos:
       github.com/npikall/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-harlequin-zebu.sh
-        container: qc.sec_scaly-emerald-zonkey
+        - /usr/bin/env sh .sqa/script.scaly-amaranth-cassowary.sh
+        container: qc.sec_hazy-cornflower-capuchin
   QC.Sty:
     repos:
       github.com/npikall/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-magenta-orangutan.sh
-        container: qc.sty_stuffy-amethyst-sponge
+        - /usr/bin/env sh .sqa/script.dorky-indigo-koala.sh
+        container: qc.sty_messy-denim-butterfly
       github.com/npikall/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-persimmon-spitz.sh
-        container: qc.sty_surly-amethyst-whale
+        - /usr/bin/env sh .sqa/script.scaly-razzmatazz-hyena.sh
+        container: qc.sty_skinny-zucchini-quail
       github.com/npikall/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-russet-cat.sh
-        container: qc.sty_squirrely-amaranth-spitz
+        - /usr/bin/env sh .sqa/script.snappy-crimson-blue.sh
+        container: qc.sty_dorky-russet-frigatebird
   QC.Uni:
     repos:
       github.com/npikall/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-tan-tarsier.sh
-        container: qc.uni_snoopy-cream-chinchilla
+        - /usr/bin/env sh .sqa/script.leaky-aquamarine-bracke.sh
+        container: qc.uni_pokey-mustard-hippopotamus
   QC.Ver:
     repos:
       github.com/npikall/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-carmine-angelfish.sh
-        container: qc.ver_stuffy-taupe-paradise
+        - /usr/bin/env sh .sqa/script.pokey-maroon-quokka.sh
+        container: qc.ver_wiggy-copper-barb
 timeout: 5400
