@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/npikall/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-sepia-newt.sh
-        container: qc.acc_bumpy-chestnut-uguisu
+        - /usr/bin/env sh .sqa/script.woozy-lavender-insect.sh
+        container: qc.acc_surly-gold-woodlouse
   QC.Doc:
     repos:
       github.com/npikall/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-thistle-elephant.sh
-        container: qc.doc_chewy-amethyst-whippet
+        - /usr/bin/env sh .sqa/script.sunny-carmine-harrier.sh
+        container: qc.doc_cloudy-corn-iguana
       github.com/npikall/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-fuchsia-magpie.sh
-        container: qc.doc_frumpy-firebrick-quoll
+        - /usr/bin/env sh .sqa/script.flimsy-grey-rabbit.sh
+        container: qc.doc_geeky-aquamarine-quoll
       github.com/npikall/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-razzmatazz-dollar.sh
-        container: qc.doc_sleepy-blue-beetle
+        - /usr/bin/env sh .sqa/script.clammy-green-angelfish.sh
+        container: qc.doc_skanky-viridian-macaw
       github.com/npikall/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-denim-magpie.sh
-        container: qc.doc_lousy-gamboge-barnacle
+        - /usr/bin/env sh .sqa/script.slimy-cinnamon-gharial.sh
+        container: qc.doc_muzzy-silver-dog
   QC.Lic:
     repos:
       github.com/npikall/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-emerald-albatross.sh
-        container: qc.lic_wheezy-olivine-clam
+        - /usr/bin/env sh .sqa/script.geeky-cerulean-budgerigar.sh
+        container: qc.lic_scaly-emerald-cat
   QC.Met:
     repos:
       github.com/npikall/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-rose-quokka.sh
-        container: qc.met_shabby-auburn-grasshopper
+        - /usr/bin/env sh .sqa/script.wimpy-auburn-albatross.sh
+        container: qc.met_cloudy-amber-koala
   QC.Sec:
     repos:
       github.com/npikall/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-amaranth-cassowary.sh
-        container: qc.sec_hazy-cornflower-capuchin
+        - /usr/bin/env sh .sqa/script.craggy-chestnut-armadillo.sh
+        container: qc.sec_shabby-olive-moose
   QC.Sty:
     repos:
       github.com/npikall/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-indigo-koala.sh
-        container: qc.sty_messy-denim-butterfly
+        - /usr/bin/env sh .sqa/script.scummy-black-balinese.sh
+        container: qc.sty_frumpy-green-mole
       github.com/npikall/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-razzmatazz-hyena.sh
-        container: qc.sty_skinny-zucchini-quail
+        - /usr/bin/env sh .sqa/script.geeky-aquamarine-stingray.sh
+        container: qc.sty_silly-vermilion-bandicoot
       github.com/npikall/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-crimson-blue.sh
-        container: qc.sty_dorky-russet-frigatebird
+        - /usr/bin/env sh .sqa/script.flimsy-ochre-peccary.sh
+        container: qc.sty_flabby-plum-monkey
   QC.Uni:
     repos:
       github.com/npikall/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-aquamarine-bracke.sh
-        container: qc.uni_pokey-mustard-hippopotamus
+        - /usr/bin/env sh .sqa/script.snappy-myrtle-warthog.sh
+        container: qc.uni_gimpy-eggplant-lionfish
   QC.Ver:
     repos:
       github.com/npikall/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-maroon-quokka.sh
-        container: qc.ver_wiggy-copper-barb
+        - /usr/bin/env sh .sqa/script.grumpy-vermilion-beagle.sh
+        container: qc.ver_hazy-pear-ostrich
 timeout: 5400
