@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-periwinkle-crocodile.sh
-        container: qc.acc_sickly-persimmon-oyster
+        - /usr/bin/env sh .sqa/script.sickly-yellow-gorilla.sh
+        container: qc.acc_skanky-cobalt-koala
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-eggplant-capuchin.sh
-        container: qc.doc_clammy-copper-angora
+        - /usr/bin/env sh .sqa/script.dorky-turquoise-mongrel.sh
+        container: qc.doc_smelly-celadon-terrier
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-taupe-zorse.sh
-        container: qc.doc_craggy-wisteria-argentino
+        - /usr/bin/env sh .sqa/script.skimpy-rose-tiger.sh
+        container: qc.doc_chummy-cardinal-emu
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-tangerine-dachsbracke.sh
-        container: qc.doc_foggy-harlequin-dragonfly
+        - /usr/bin/env sh .sqa/script.muzzy-persimmon-cuttlefish.sh
+        container: qc.doc_slimy-tomato-worm
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-russet-monkey.sh
-        container: qc.doc_homey-cornflower-zebu
+        - /usr/bin/env sh .sqa/script.whiny-taupe-maltese.sh
+        container: qc.doc_snappy-pink-butterfly
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-carmine-butterfly.sh
-        container: qc.lic_shaggy-red-cassowary
+        - /usr/bin/env sh .sqa/script.scanty-crimson-antelope.sh
+        container: qc.lic_snoopy-turquoise-chipmunk
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-gamboge-liger.sh
-        container: qc.met_homey-cyan-snake
+        - /usr/bin/env sh .sqa/script.cranky-amethyst-walrus.sh
+        container: qc.met_flabby-white-shrew
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-eggplant-crane.sh
-        container: qc.sec_baggy-razzmatazz-lion
+        - /usr/bin/env sh .sqa/script.crappy-copper-heron.sh
+        container: qc.sec_sloppy-red-insect
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-viridian-whippet.sh
-        container: qc.sty_zippy-aqua-meerkat
+        - /usr/bin/env sh .sqa/script.homely-xanthic-argentino.sh
+        container: qc.sty_leaky-lilac-slug
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-peach-lemming.sh
-        container: qc.sty_tasty-teal-angelfish
+        - /usr/bin/env sh .sqa/script.beady-green-wolf.sh
+        container: qc.sty_nippy-olivine-flamingo
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-olive-bloodhound.sh
-        container: qc.sty_cheeky-khaki-ostrich
+        - /usr/bin/env sh .sqa/script.nippy-cinnabar-guppy.sh
+        container: qc.sty_seedy-ruby-chihuahua
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-tangerine-cuscus.sh
-        container: qc.uni_ready-cerulean-bongo
+        - /usr/bin/env sh .sqa/script.frumpy-tangerine-bison.sh
+        container: qc.uni_gamy-pumpkin-camel
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-khaki-orangutan.sh
-        container: qc.ver_fuzzy-ruby-squid
+        - /usr/bin/env sh .sqa/script.pretty-cinnabar-wildebeest.sh
+        container: qc.ver_dorky-xanthic-sponge
 timeout: 5400
