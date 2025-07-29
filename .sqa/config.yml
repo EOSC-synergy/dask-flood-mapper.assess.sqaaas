@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-flax-sheepdog.sh
-        container: qc.acc_nerdy-firebrick-dragon
+        - /usr/bin/env sh .sqa/script.stinky-lime-scorpion.sh
+        container: qc.acc_hazy-olivine-leopard
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-cyan-barnacle.sh
-        container: qc.doc_lumpy-fuchsia-clam
+        - /usr/bin/env sh .sqa/script.blurry-brown-olm.sh
+        container: qc.doc_hasty-lilac-axolotl
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-salmon-squid.sh
-        container: qc.doc_droopy-periwinkle-turkey
+        - /usr/bin/env sh .sqa/script.randy-aqua-frog.sh
+        container: qc.doc_ugly-platinum-dormouse
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-crimson-fousek.sh
-        container: qc.doc_ready-black-newfoundland
+        - /usr/bin/env sh .sqa/script.gummy-khaki-wolf.sh
+        container: qc.doc_crappy-flax-fox
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-chocolate-swan.sh
-        container: qc.doc_blurry-turquoise-devil
+        - /usr/bin/env sh .sqa/script.silly-razzmatazz-burmese.sh
+        container: qc.doc_baggy-red-mayfly
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-alizarin-flounder.sh
-        container: qc.lic_seedy-khaki-skunk
+        - /usr/bin/env sh .sqa/script.gummy-celadon-newt.sh
+        container: qc.lic_boozy-persimmon-foxhound
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-periwinkle-woodpecker.sh
-        container: qc.met_randy-coral-jellyfish
+        - /usr/bin/env sh .sqa/script.ugly-taupe-zebu.sh
+        container: qc.met_gloppy-buff-neanderthal
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-azure-dachshund.sh
-        container: qc.sec_chummy-orange-retriever
+        - /usr/bin/env sh .sqa/script.beady-ivory-gecko.sh
+        container: qc.sec_hasty-purple-seahorse
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-cyan-yak.sh
-        container: qc.sty_scaly-amethyst-donkey
+        - /usr/bin/env sh .sqa/script.tasty-persimmon-zorse.sh
+        container: qc.sty_greasy-tan-monster
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-ecru-squirrel.sh
-        container: qc.sty_homely-salmon-meerkat
+        - /usr/bin/env sh .sqa/script.silly-chestnut-dachshund.sh
+        container: qc.sty_craggy-corn-caterpillar
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-sangria-dolphin.sh
-        container: qc.sty_pasty-pumpkin-cuttlefish
+        - /usr/bin/env sh .sqa/script.fuzzy-red-octopus.sh
+        container: qc.sty_messy-black-moth
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-lemon-shark.sh
-        container: qc.uni_zippy-saffron-dog
+        - /usr/bin/env sh .sqa/script.grumpy-olivine-ostrich.sh
+        container: qc.uni_pasty-amethyst-ocelot
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-cerise-paradise.sh
-        container: qc.ver_stinky-vermilion-spider
+        - /usr/bin/env sh .sqa/script.baggy-ivory-fly.sh
+        container: qc.ver_clammy-burgundy-tamarin
 timeout: 5400
