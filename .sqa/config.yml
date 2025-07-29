@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-yellow-gorilla.sh
-        container: qc.acc_skanky-cobalt-koala
+        - /usr/bin/env sh .sqa/script.thirsty-denim-fossa.sh
+        container: qc.acc_thirsty-cinnamon-cichlid
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-turquoise-mongrel.sh
-        container: qc.doc_smelly-celadon-terrier
+        - /usr/bin/env sh .sqa/script.muzzy-crimson-caterpillar.sh
+        container: qc.doc_muggy-persimmon-ibis
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-rose-tiger.sh
-        container: qc.doc_chummy-cardinal-emu
+        - /usr/bin/env sh .sqa/script.scanty-blue-goose.sh
+        container: qc.doc_slimy-dandelion-stoat
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-persimmon-cuttlefish.sh
-        container: qc.doc_slimy-tomato-worm
+        - /usr/bin/env sh .sqa/script.freaky-bronze-oriole.sh
+        container: qc.doc_freaky-lime-labradoodle
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-taupe-maltese.sh
-        container: qc.doc_snappy-pink-butterfly
+        - /usr/bin/env sh .sqa/script.flimsy-cerise-collie.sh
+        container: qc.doc_blurry-cinnabar-bird
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-crimson-antelope.sh
-        container: qc.lic_snoopy-turquoise-chipmunk
+        - /usr/bin/env sh .sqa/script.nerdy-sepia-newt.sh
+        container: qc.lic_zippy-asparagus-chinchilla
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-amethyst-walrus.sh
-        container: qc.met_flabby-white-shrew
+        - /usr/bin/env sh .sqa/script.hazy-chestnut-fossa.sh
+        container: qc.met_bluesy-corn-hyena
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-copper-heron.sh
-        container: qc.sec_sloppy-red-insect
+        - /usr/bin/env sh .sqa/script.snippy-goldenrod-bracke.sh
+        container: qc.sec_sloppy-crimson-chin
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-xanthic-argentino.sh
-        container: qc.sty_leaky-lilac-slug
+        - /usr/bin/env sh .sqa/script.dorky-vermilion-spitz.sh
+        container: qc.sty_slaphappy-champagne-monster
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-green-wolf.sh
-        container: qc.sty_nippy-olivine-flamingo
+        - /usr/bin/env sh .sqa/script.sloppy-cornflower-magpie.sh
+        container: qc.sty_tasty-white-foxhound
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-cinnabar-guppy.sh
-        container: qc.sty_seedy-ruby-chihuahua
+        - /usr/bin/env sh .sqa/script.cozy-scarlet-earwig.sh
+        container: qc.sty_skinny-ivory-termite
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-tangerine-bison.sh
-        container: qc.uni_gamy-pumpkin-camel
+        - /usr/bin/env sh .sqa/script.cloudy-goldenrod-numbat.sh
+        container: qc.uni_blurry-beige-deer
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-cinnabar-wildebeest.sh
-        container: qc.ver_dorky-xanthic-sponge
+        - /usr/bin/env sh .sqa/script.lanky-celadon-schnauzer.sh
+        container: qc.ver_sickly-coral-saola
 timeout: 5400
