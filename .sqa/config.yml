@@ -5,7 +5,7 @@ config:
       branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/interTwin-eu/dask-flood-mapper:
-      branch: main
+      branch: dev-update-image
       repo: https://github.com/interTwin-eu/dask-flood-mapper
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-yellow-gorilla.sh
-        container: qc.acc_skanky-cobalt-koala
+        - /usr/bin/env sh .sqa/script.leaky-flax-sheepdog.sh
+        container: qc.acc_nerdy-firebrick-dragon
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-turquoise-mongrel.sh
-        container: qc.doc_smelly-celadon-terrier
+        - /usr/bin/env sh .sqa/script.shaky-cyan-barnacle.sh
+        container: qc.doc_lumpy-fuchsia-clam
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-rose-tiger.sh
-        container: qc.doc_chummy-cardinal-emu
+        - /usr/bin/env sh .sqa/script.silly-salmon-squid.sh
+        container: qc.doc_droopy-periwinkle-turkey
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-persimmon-cuttlefish.sh
-        container: qc.doc_slimy-tomato-worm
+        - /usr/bin/env sh .sqa/script.zippy-crimson-fousek.sh
+        container: qc.doc_ready-black-newfoundland
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-taupe-maltese.sh
-        container: qc.doc_snappy-pink-butterfly
+        - /usr/bin/env sh .sqa/script.baggy-chocolate-swan.sh
+        container: qc.doc_blurry-turquoise-devil
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-crimson-antelope.sh
-        container: qc.lic_snoopy-turquoise-chipmunk
+        - /usr/bin/env sh .sqa/script.cheeky-alizarin-flounder.sh
+        container: qc.lic_seedy-khaki-skunk
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-amethyst-walrus.sh
-        container: qc.met_flabby-white-shrew
+        - /usr/bin/env sh .sqa/script.slimy-periwinkle-woodpecker.sh
+        container: qc.met_randy-coral-jellyfish
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-copper-heron.sh
-        container: qc.sec_sloppy-red-insect
+        - /usr/bin/env sh .sqa/script.smelly-azure-dachshund.sh
+        container: qc.sec_chummy-orange-retriever
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-xanthic-argentino.sh
-        container: qc.sty_leaky-lilac-slug
+        - /usr/bin/env sh .sqa/script.nerdy-cyan-yak.sh
+        container: qc.sty_scaly-amethyst-donkey
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-green-wolf.sh
-        container: qc.sty_nippy-olivine-flamingo
+        - /usr/bin/env sh .sqa/script.sleazy-ecru-squirrel.sh
+        container: qc.sty_homely-salmon-meerkat
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-cinnabar-guppy.sh
-        container: qc.sty_seedy-ruby-chihuahua
+        - /usr/bin/env sh .sqa/script.lanky-sangria-dolphin.sh
+        container: qc.sty_pasty-pumpkin-cuttlefish
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-tangerine-bison.sh
-        container: qc.uni_gamy-pumpkin-camel
+        - /usr/bin/env sh .sqa/script.hasty-lemon-shark.sh
+        container: qc.uni_zippy-saffron-dog
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-cinnabar-wildebeest.sh
-        container: qc.ver_dorky-xanthic-sponge
+        - /usr/bin/env sh .sqa/script.beady-cerise-paradise.sh
+        container: qc.ver_stinky-vermilion-spider
 timeout: 5400
