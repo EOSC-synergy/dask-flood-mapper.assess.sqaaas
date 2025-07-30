@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-denim-fossa.sh
-        container: qc.acc_thirsty-cinnamon-cichlid
+        - /usr/bin/env sh .sqa/script.wiggy-purple-ibis.sh
+        container: qc.acc_randy-cyan-ostrich
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-crimson-caterpillar.sh
-        container: qc.doc_muggy-persimmon-ibis
+        - /usr/bin/env sh .sqa/script.slimy-red-wildebeest.sh
+        container: qc.doc_clammy-brass-tortoise
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-blue-goose.sh
-        container: qc.doc_slimy-dandelion-stoat
+        - /usr/bin/env sh .sqa/script.scanty-lime-buzzard.sh
+        container: qc.doc_paltry-salmon-turkey
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-bronze-oriole.sh
-        container: qc.doc_freaky-lime-labradoodle
+        - /usr/bin/env sh .sqa/script.lanky-pear-dachshund.sh
+        container: qc.doc_thirsty-brass-birman
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-cerise-collie.sh
-        container: qc.doc_blurry-cinnabar-bird
+        - /usr/bin/env sh .sqa/script.stealthy-blue-olm.sh
+        container: qc.doc_lumpy-teal-donkey
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-sepia-newt.sh
-        container: qc.lic_zippy-asparagus-chinchilla
+        - /usr/bin/env sh .sqa/script.freaky-red-macaque.sh
+        container: qc.lic_lumpy-amethyst-bat
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-chestnut-fossa.sh
-        container: qc.met_bluesy-corn-hyena
+        - /usr/bin/env sh .sqa/script.snappy-khaki-frigatebird.sh
+        container: qc.met_paltry-magenta-angora
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-goldenrod-bracke.sh
-        container: qc.sec_sloppy-crimson-chin
+        - /usr/bin/env sh .sqa/script.droopy-persimmon-raccoon.sh
+        container: qc.sec_cozy-emerald-insect
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-vermilion-spitz.sh
-        container: qc.sty_slaphappy-champagne-monster
+        - /usr/bin/env sh .sqa/script.hilly-aquamarine-fousek.sh
+        container: qc.sty_dorky-pear-wolf
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-cornflower-magpie.sh
-        container: qc.sty_tasty-white-foxhound
+        - /usr/bin/env sh .sqa/script.queasy-purple-robin.sh
+        container: qc.sty_baggy-lavender-shark
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-scarlet-earwig.sh
-        container: qc.sty_skinny-ivory-termite
+        - /usr/bin/env sh .sqa/script.woolly-xanthic-whippet.sh
+        container: qc.sty_gamy-lavender-cattle
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-goldenrod-numbat.sh
-        container: qc.uni_blurry-beige-deer
+        - /usr/bin/env sh .sqa/script.skanky-grey-hedgehog.sh
+        container: qc.uni_woolly-white-boar
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-celadon-schnauzer.sh
-        container: qc.ver_sickly-coral-saola
+        - /usr/bin/env sh .sqa/script.stuffy-green-woodpecker.sh
+        container: qc.ver_surly-silver-ant
 timeout: 5400
