@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-cream-lynx.sh
-        container: qc.acc_hazy-corn-grouse
+        - /usr/bin/env sh .sqa/script.seedy-cerise-molly.sh
+        container: qc.acc_gamy-carmine-crocodile
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-cerulean-gorilla.sh
-        container: qc.doc_wiggy-buff-orangutan
+        - /usr/bin/env sh .sqa/script.craggy-salmon-gar.sh
+        container: qc.doc_blurry-russet-rottweiler
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-red-abyssinian.sh
-        container: qc.doc_skinny-peach-otter
+        - /usr/bin/env sh .sqa/script.silly-apricot-mouse.sh
+        container: qc.doc_hilly-bistre-molly
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-sepia-reindeer.sh
-        container: qc.doc_shaggy-tomato-turtle
+        - /usr/bin/env sh .sqa/script.snoopy-cerulean-argentino.sh
+        container: qc.doc_boozy-pumpkin-iguana
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-black-ray.sh
-        container: qc.doc_frumpy-lime-walrus
+        - /usr/bin/env sh .sqa/script.wiggy-bistre-chinchilla.sh
+        container: qc.doc_scaly-plum-catfish
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-corn-insect.sh
-        container: qc.lic_gimpy-smalt-burmese
+        - /usr/bin/env sh .sqa/script.baggy-bronze-iguana.sh
+        container: qc.lic_skinny-indigo-chipmunk
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-wheat-owl.sh
-        container: qc.met_tacky-burgundy-gar
+        - /usr/bin/env sh .sqa/script.sleepy-indigo-barnacle.sh
+        container: qc.met_lousy-cinnabar-dragonfly
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-maroon-termite.sh
-        container: qc.sec_hazy-chocolate-heron
+        - /usr/bin/env sh .sqa/script.pasty-amaranth-paradise.sh
+        container: qc.sec_pasty-chocolate-boar
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-aqua-coati.sh
-        container: qc.sty_gamy-harlequin-seal
+        - /usr/bin/env sh .sqa/script.freaky-pink-cuscus.sh
+        container: qc.sty_trippy-scarlet-jaguar
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-magenta-eagle.sh
-        container: qc.sty_nippy-cerulean-leopard
+        - /usr/bin/env sh .sqa/script.gummy-flax-crab.sh
+        container: qc.sty_paltry-turquoise-frise
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-persimmon-crocodile.sh
-        container: qc.sty_squeaky-jade-dollar
+        - /usr/bin/env sh .sqa/script.fuzzy-viridian-duck.sh
+        container: qc.sty_shabby-persimmon-albatross
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-copper-crane.sh
-        container: qc.uni_skimpy-periwinkle-cuscus
+        - /usr/bin/env sh .sqa/script.slaphappy-chartreuse-tarantula.sh
+        container: qc.uni_shabby-chestnut-antelope
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-bistre-bordeaux.sh
-        container: qc.ver_boozy-ecru-cuscus
+        - /usr/bin/env sh .sqa/script.fuzzy-emerald-opossum.sh
+        container: qc.ver_shaky-ruby-mandrill
 timeout: 5400
