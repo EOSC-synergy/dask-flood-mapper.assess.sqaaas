@@ -15,68 +15,68 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-red-antelope.sh
-        container: qc.acc_slimy-goldenrod-mandrill
+        - /usr/bin/env sh .sqa/script.slaphappy-seashell-rat.sh
+        container: qc.acc_pasty-ruby-chipmunk
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-mauve-bat.sh
-        container: qc.doc_wiggy-charcoal-tetra
+        - /usr/bin/env sh .sqa/script.chummy-charcoal-fox.sh
+        container: qc.doc_craggy-brass-seahorse
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-sangria-swan.sh
-        container: qc.doc_chummy-eggplant-schnauzer
+        - /usr/bin/env sh .sqa/script.lousy-cerulean-sparrow.sh
+        container: qc.doc_flimsy-orchid-chamois
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-firebrick-hare.sh
-        container: qc.doc_lovely-alizarin-bee
+        - /usr/bin/env sh .sqa/script.gamy-cream-whippet.sh
+        container: qc.doc_squirrely-brass-chinook
       github.com/interTwin-eu/dask-flood-mapper restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-champagne-cat.sh
-        container: qc.doc_stealthy-silver-rabbit
+        - /usr/bin/env sh .sqa/script.trippy-amethyst-mongrel.sh
+        container: qc.doc_skimpy-scarlet-barnacle
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-cardinal-guppy.sh
-        container: qc.lic_grumpy-ecru-millipede
+        - /usr/bin/env sh .sqa/script.dorky-goldenrod-snail.sh
+        container: qc.lic_trippy-grey-dunker
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-burgundy-moorhen.sh
-        container: qc.met_homely-magnolia-lion
+        - /usr/bin/env sh .sqa/script.geeky-pink-kiwi.sh
+        container: qc.met_clammy-olivine-chin
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-cerise-grasshopper.sh
-        container: qc.sec_clammy-lemon-goose
+        - /usr/bin/env sh .sqa/script.skanky-rust-stoat.sh
+        container: qc.sec_leaky-bistre-badger
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-aquamarine-uakari.sh
-        container: qc.sty_stealthy-vermilion-mongoose
+        - /usr/bin/env sh .sqa/script.wheezy-magnolia-tzu.sh
+        container: qc.sty_sickly-scarlet-eel
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-cornflower-turkey.sh
-        container: qc.sty_tacky-khaki-tzu
+        - /usr/bin/env sh .sqa/script.shaky-magnolia-maltese.sh
+        container: qc.sty_paltry-ultramarine-emu
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-crimson-clam.sh
-        container: qc.sty_hasty-bronze-panda
+        - /usr/bin/env sh .sqa/script.slimy-peach-woodlouse.sh
+        container: qc.sty_pokey-azure-flamingo
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-khaki-elephant.sh
-        container: qc.uni_homey-corn-coati
+        - /usr/bin/env sh .sqa/script.homely-magenta-blue.sh
+        container: qc.uni_wimpy-green-chipmunk
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-celadon-hummingbird.sh
-        container: qc.ver_grumpy-thistle-donkey
+        - /usr/bin/env sh .sqa/script.cozy-wheat-crab.sh
+        container: qc.ver_cozy-beige-buffalo
 timeout: 5400
