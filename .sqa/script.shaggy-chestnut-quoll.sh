@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/interTwin-eu/dask-flood-mapper &&
+cd github.com/claytharrison/dask-flood-mapper &&
     git rev-parse --is-inside-work-tree 
 )

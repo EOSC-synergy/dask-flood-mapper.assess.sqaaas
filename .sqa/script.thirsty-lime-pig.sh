@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/interTwin-eu/dask-flood-mapper &&
-    pytest ./tests
+cd github.com/claytharrison/dask-flood-mapper &&
+    jsonlint-cli "**/*.json"
 )
