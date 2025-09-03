@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/claytharrison/dask-flood-mapper &&
-    flake8 .
+cd github.com/interTwin-eu/dask-flood-mapper &&
+    rst-lint --level warning --format json .
 )

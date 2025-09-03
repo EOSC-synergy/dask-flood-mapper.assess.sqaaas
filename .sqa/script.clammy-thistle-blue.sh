@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/claytharrison/dask-flood-mapper &&
-    cffconvert --validate 
+cd github.com/interTwin-eu/dask-flood-mapper &&
+    licensee detect . --confidence 60 --json 
 )
