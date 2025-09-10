@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/Ophidia-test
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/interTwin-eu/dask-flood-mapper:
       branch: workshop-modified
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-flax-fox.sh
-        container: qc.acc_messy-cinnamon-binturong
+        - /usr/bin/env sh .sqa/script.silly-cinnabar-salamander.sh
+        container: qc.acc_snoopy-lilac-ferret
   QC.Doc:
     repos:
       github.com/interTwin-eu/dask-flood-mapper find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-maroon-emu.sh
-        container: qc.doc_snazzy-jade-tetra
+        - /usr/bin/env sh .sqa/script.geeky-cyan-macaque.sh
+        container: qc.doc_slaphappy-vermilion-wombat
       github.com/interTwin-eu/dask-flood-mapper git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-goldenrod-centipede.sh
-        container: qc.doc_stealthy-lemon-lemur
+        - /usr/bin/env sh .sqa/script.pretty-pear-ferret.sh
+        container: qc.doc_shaggy-ruby-echidna
       github.com/interTwin-eu/dask-flood-mapper markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-wisteria-koala.sh
-        container: qc.doc_trippy-cobalt-fish
+        - /usr/bin/env sh .sqa/script.sickly-pumpkin-tuatara.sh
+        container: qc.doc_lanky-magenta-mandrill
   QC.Lic:
     repos:
       github.com/interTwin-eu/dask-flood-mapper licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-brass-tarantula.sh
-        container: qc.lic_gamy-cobalt-fousek
+        - /usr/bin/env sh .sqa/script.pretty-wisteria-chinook.sh
+        container: qc.lic_frumpy-pumpkin-crab
   QC.Met:
     repos:
       github.com/interTwin-eu/dask-flood-mapper cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-coral-urchin.sh
-        container: qc.met_hasty-wisteria-oyster
+        - /usr/bin/env sh .sqa/script.hasty-thistle-terrier.sh
+        container: qc.met_chewy-khaki-crab
   QC.Sec:
     repos:
       github.com/interTwin-eu/dask-flood-mapper bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-jade-turkey.sh
-        container: qc.sec_frumpy-rust-skunk
+        - /usr/bin/env sh .sqa/script.gummy-ultramarine-sponge.sh
+        container: qc.sec_homey-aquamarine-burmese
   QC.Sty:
     repos:
       github.com/interTwin-eu/dask-flood-mapper flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-cyan-vulture.sh
-        container: qc.sty_frumpy-ochre-nightingale
+        - /usr/bin/env sh .sqa/script.scanty-cream-heron.sh
+        container: qc.sty_blurry-eggplant-mule
       github.com/interTwin-eu/dask-flood-mapper hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-periwinkle-barracuda.sh
-        container: qc.sty_beady-bronze-flamingo
+        - /usr/bin/env sh .sqa/script.queasy-wheat-zonkey.sh
+        container: qc.sty_shabby-fuchsia-barb
       github.com/interTwin-eu/dask-flood-mapper jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-crimson-bombay.sh
-        container: qc.sty_gimpy-white-ostrich
+        - /usr/bin/env sh .sqa/script.flaky-ecru-lionfish.sh
+        container: qc.sty_zippy-champagne-bee
   QC.Uni:
     repos:
       github.com/interTwin-eu/dask-flood-mapper pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-khaki-otter.sh
-        container: qc.uni_homely-emerald-jaguar
+        - /usr/bin/env sh .sqa/script.homey-amethyst-millipede.sh
+        container: qc.uni_ready-mauve-javanese
   QC.Ver:
     repos:
       github.com/interTwin-eu/dask-flood-mapper get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-sepia-axolotl.sh
-        container: qc.ver_scummy-buff-nightingale
+        - /usr/bin/env sh .sqa/script.randy-amaranth-sparrow.sh
+        container: qc.ver_snappy-chartreuse-hyena
 timeout: 5400
